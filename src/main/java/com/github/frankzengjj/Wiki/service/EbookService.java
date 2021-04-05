@@ -1,19 +1,20 @@
 package com.github.frankzengjj.Wiki.service;
 
-import com.github.frankzengjj.Wiki.domain.Demo;
 import com.github.frankzengjj.Wiki.domain.Ebook;
 import com.github.frankzengjj.Wiki.domain.EbookExample;
-import com.github.frankzengjj.Wiki.mapper.DemoMapper;
 import com.github.frankzengjj.Wiki.mapper.EbookMapper;
-import com.github.frankzengjj.Wiki.request.EbookRequest;
-import com.github.frankzengjj.Wiki.response.EbookResponse;
+import com.github.frankzengjj.Wiki.request.EbookQueryRequest;
+import com.github.frankzengjj.Wiki.request.EbookSaveRequest;
+import com.github.frankzengjj.Wiki.response.EbookQueryResponse;
+import com.github.frankzengjj.Wiki.response.PageResponse;
 import com.github.frankzengjj.Wiki.util.CopyUtil;
-import org.springframework.beans.BeanUtils;
+import com.github.frankzengjj.Wiki.util.SnowFlake;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ObjectUtils;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -22,14 +23,37 @@ public class EbookService {
     @Autowired
     private EbookMapper ebookMapper;
 
-    public List<EbookResponse> list(EbookRequest ebookRequest) {
+    @Autowired
+    private SnowFlake snowFlake;
+
+    public PageResponse<EbookQueryResponse> list(EbookQueryRequest ebookQueryRequest) {
         EbookExample ebookExample = new EbookExample();
         EbookExample.Criteria criteria = ebookExample.createCriteria();
-        if (!ObjectUtils.isEmpty(ebookRequest.getName())) {
-            criteria.andNameLike("%" + ebookRequest.getName() + "%");
+        if (!ObjectUtils.isEmpty(ebookQueryRequest.getName())) {
+            criteria.andNameLike("%" + ebookQueryRequest.getName() + "%");
         }
+        PageHelper.startPage(ebookQueryRequest.getPage(), ebookQueryRequest.getSize());
         List<Ebook> ebookList = ebookMapper.selectByExample(ebookExample);
-        List<EbookResponse> responseList = CopyUtil.copyList(ebookList, EbookResponse.class);
-        return responseList;
+
+        PageInfo<Ebook> pageInfo = new PageInfo<>(ebookList);
+        PageResponse<EbookQueryResponse> pageResponse = new PageResponse<>();
+        List<EbookQueryResponse> responseList = CopyUtil.copyList(ebookList, EbookQueryResponse.class);
+        pageResponse.setTotal(pageInfo.getTotal());
+        pageResponse.setList(responseList);
+        return pageResponse;
+    }
+
+    public void save(EbookSaveRequest ebookSaveRequest) {
+        Ebook ebook = CopyUtil.copy(ebookSaveRequest, Ebook.class);
+        if (ObjectUtils.isEmpty(ebookSaveRequest.getId())) {
+            ebook.setId(snowFlake.nextId());
+            ebookMapper.insert(ebook);
+        } else {
+            ebookMapper.updateByPrimaryKey(ebook);
+        }
+    }
+
+    public void delete(Long id) {
+        ebookMapper.deleteByPrimaryKey(id);
     }
 }

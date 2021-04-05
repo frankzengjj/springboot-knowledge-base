@@ -1,6 +1,6 @@
 package com.github.frankzengjj.Wiki.request;
 
-public class EbookRequest {
+public class EbookQueryRequest extends PageRequest {
     private Long id;
 
     private String name;

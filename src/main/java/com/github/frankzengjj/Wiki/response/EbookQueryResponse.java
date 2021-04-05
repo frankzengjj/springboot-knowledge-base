@@ -1,6 +1,6 @@
 package com.github.frankzengjj.Wiki.response;
 
-public class EbookResponse {
+public class EbookQueryResponse {
     private Long id;
 
     private String name;
