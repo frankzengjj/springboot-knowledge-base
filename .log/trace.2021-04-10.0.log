@@ -1,0 +1,1146 @@
+2021-04-10 01:08:46.398 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=1d1h9m31s824ms).
+2021-04-10 01:09:45.681 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-10 01:09:45.690 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-4 - Shutdown initiated...
+2021-04-10 01:09:46.637 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-4 - Shutdown completed.
+2021-04-10 01:31:27.623 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.1.7.Final
+2021-04-10 01:31:27.745 INFO  com.github.frankzengjj.Wiki.WikiApplication       :55   [32m                  [0;39m Starting WikiApplication using Java 14.0.1 on Tianyus-MacBook-Air.local with PID 55009 (/Users/tianyuzeng/Desktop/github/Wiki/target/classes started by tianyuzeng in /Users/tianyuzeng/Desktop/github/Wiki)
+2021-04-10 01:31:27.877 INFO  com.github.frankzengjj.Wiki.WikiApplication       :662  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-04-10 01:31:28.044 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-10 01:31:28.046 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-10 01:31:30.472 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-04-10 01:31:30.486 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-04-10 01:31:30.487 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-04-10 01:31:30.487 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-10 01:31:30.562 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-04-10 01:31:30.562 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 2514 ms
+2021-04-10 01:31:31.499 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-10 01:31:31.912 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-04-10 01:31:31.929 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-04-10 01:31:31.960 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-04-10 01:31:31.972 INFO  com.github.frankzengjj.Wiki.WikiApplication       :61   [32m                  [0;39m Started WikiApplication in 5.344 seconds (JVM running for 6.334)
+2021-04-10 01:31:40.917 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-10 01:31:40.919 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-04-10 01:31:40.922 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 3 ms
+2021-04-10 01:31:41.063 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 01:31:41.065 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/category/all GET
+2021-04-10 01:31:41.066 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.CategoryController.all
+2021-04-10 01:31:41.067 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 01:31:41.232 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: []
+2021-04-10 01:31:41.349 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2021-04-10 01:31:43.181 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2021-04-10 01:31:43.202 DEBUG c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-04-10 01:31:43.267 DEBUG c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 
+2021-04-10 01:31:43.429 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-04-10 01:31:43.430 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 35288494033211392, 0, Interview, 1
+2021-04-10 01:31:43.433 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 35289857274286080, 35288494033211392, Interview tips, 1
+2021-04-10 01:31:43.434 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-04-10 01:31:43.435 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-04-10 01:31:43.436 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-04-10 01:31:43.437 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-04-10 01:31:43.439 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-04-10 01:31:43.440 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2021-04-10 01:31:43.442 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-04-10 01:31:43.443 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-04-10 01:31:43.444 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-04-10 01:31:43.446 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-04-10 01:31:43.447 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-04-10 01:31:43.448 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2021-04-10 01:31:43.449 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-04-10 01:31:43.451 DEBUG c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 15
+2021-04-10 01:31:43.518 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":[{"id":35288494033211392,"name":"Interview","parent":0,"sort":1},{"id":35289857274286080,"name":"Interview tips","parent":35288494033211392,"sort":1},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501}],"success":true}
+2021-04-10 01:31:43.519 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：2458 ms -------------
+2021-04-10 01:31:48.585 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 01:31:48.586 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/list GET
+2021-04-10 01:31:48.586 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.list
+2021-04-10 01:31:48.586 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 01:31:48.593 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-04-10 01:31:48.774 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-04-10 01:31:48.775 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-04-10 01:31:48.891 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-04-10 01:31:48.892 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 1
+2021-04-10 01:31:48.894 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-04-10 01:31:48.899 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-04-10 01:31:48.900 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-04-10 01:31:48.989 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-04-10 01:31:48.990 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 1, test, 测试, test
+2021-04-10 01:31:48.993 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m <==      Total: 1
+2021-04-10 01:31:49.019 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"}],"total":1},"success":true}
+2021-04-10 01:31:49.021 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：436 ms -------------
+2021-04-10 01:31:52.813 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 01:31:52.814 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/list GET
+2021-04-10 01:31:52.814 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.list
+2021-04-10 01:31:52.814 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 01:31:52.815 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"loginName":"test","page":1,"size":10}]
+2021-04-10 01:31:52.926 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user WHERE (login_name = ?)
+2021-04-10 01:31:52.928 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: test(String)
+2021-04-10 01:31:53.019 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-04-10 01:31:53.020 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 1
+2021-04-10 01:31:53.021 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-04-10 01:31:53.022 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) LIMIT ?
+2021-04-10 01:31:53.024 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==> Parameters: test(String), 10(Integer)
+2021-04-10 01:31:53.114 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-04-10 01:31:53.116 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 1, test, 测试, test
+2021-04-10 01:31:53.116 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m <==      Total: 1
+2021-04-10 01:31:53.117 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"}],"total":1},"success":true}
+2021-04-10 01:31:53.118 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：305 ms -------------
+2021-04-10 01:31:56.254 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 01:31:56.255 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/list GET
+2021-04-10 01:31:56.257 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.list
+2021-04-10 01:31:56.257 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 01:31:56.259 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"loginName":"tes","page":1,"size":10}]
+2021-04-10 01:31:56.358 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user WHERE (login_name = ?)
+2021-04-10 01:31:56.360 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: tes(String)
+2021-04-10 01:31:56.447 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-04-10 01:31:56.448 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 0
+2021-04-10 01:31:56.449 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-04-10 01:31:56.450 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":{"list":[],"total":0},"success":true}
+2021-04-10 01:31:56.451 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：197 ms -------------
+2021-04-10 01:32:28.899 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 01:32:28.899 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/save POST
+2021-04-10 01:32:28.900 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.save
+2021-04-10 01:32:28.900 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 01:32:28.903 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"loginName":"test1","name":"frank"}]
+2021-04-10 01:32:29.003 DEBUG c.github.frankzengjj.Wiki.mapper.UserMapper.insert:137  [32m                  [0;39m ==>  Preparing: insert into user (id, login_name, `name`, `password`) values (?, ?, ?, ?)
+2021-04-10 01:32:29.005 DEBUG c.github.frankzengjj.Wiki.mapper.UserMapper.insert:137  [32m                  [0;39m ==> Parameters: 36005368958160896(Long), test1(String), frank(String), 123456(String)
+2021-04-10 01:32:29.192 DEBUG c.github.frankzengjj.Wiki.mapper.UserMapper.insert:137  [32m                  [0;39m <==    Updates: 1
+2021-04-10 01:32:29.194 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"success":true}
+2021-04-10 01:32:29.194 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：295 ms -------------
+2021-04-10 01:32:29.235 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 01:32:29.237 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/list GET
+2021-04-10 01:32:29.237 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.list
+2021-04-10 01:32:29.238 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 01:32:29.239 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"loginName":"test","page":1,"size":10}]
+2021-04-10 01:32:29.246 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user WHERE (login_name = ?)
+2021-04-10 01:32:29.247 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: test(String)
+2021-04-10 01:32:29.337 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-04-10 01:32:29.338 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 1
+2021-04-10 01:32:29.339 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-04-10 01:32:29.341 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) LIMIT ?
+2021-04-10 01:32:29.343 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==> Parameters: test(String), 10(Integer)
+2021-04-10 01:32:29.434 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-04-10 01:32:29.435 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 1, test, 测试, test
+2021-04-10 01:32:29.436 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m <==      Total: 1
+2021-04-10 01:32:29.437 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"}],"total":1},"success":true}
+2021-04-10 01:32:29.438 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：202 ms -------------
+2021-04-10 01:33:07.908 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 01:33:07.910 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/list GET
+2021-04-10 01:33:07.910 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.list
+2021-04-10 01:33:07.910 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 01:33:07.911 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-04-10 01:33:08.009 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-04-10 01:33:08.010 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-04-10 01:33:08.117 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-04-10 01:33:08.118 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 2
+2021-04-10 01:33:08.119 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-04-10 01:33:08.121 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-04-10 01:33:08.122 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-04-10 01:33:08.210 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-04-10 01:33:08.210 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 1, test, 测试, test
+2021-04-10 01:33:08.210 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 36005368958160896, test1, frank, 123456
+2021-04-10 01:33:08.211 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m <==      Total: 2
+2021-04-10 01:33:08.211 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"},{"id":36005368958160896,"loginName":"test1","name":"frank"}],"total":2},"success":true}
+2021-04-10 01:33:08.212 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：304 ms -------------
+2021-04-10 07:33:58.771 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6h15s306ms).
+2021-04-10 13:32:53.402 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5h58m54s779ms).
+2021-04-10 13:34:58.473 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m5s71ms).
+2021-04-10 14:14:51.761 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=39m53s288ms).
+2021-04-10 14:27:49.931 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-10 14:27:49.942 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2021-04-10 14:27:50.896 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2021-04-10 14:27:58.767 INFO  com.github.frankzengjj.Wiki.WikiApplication       :55   [32m                  [0;39m Starting WikiApplication using Java 14.0.1 on Tianyus-MacBook-Air.local with PID 55344 (/Users/tianyuzeng/Desktop/github/Wiki/target/classes started by tianyuzeng in /Users/tianyuzeng/Desktop/github/Wiki)
+2021-04-10 14:27:58.771 INFO  com.github.frankzengjj.Wiki.WikiApplication       :662  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-04-10 14:27:58.780 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.1.7.Final
+2021-04-10 14:27:58.916 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-10 14:27:58.917 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-10 14:28:01.591 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-04-10 14:28:01.606 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-04-10 14:28:01.606 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-04-10 14:28:01.607 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-10 14:28:01.675 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-04-10 14:28:01.676 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 2757 ms
+2021-04-10 14:28:02.675 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-10 14:28:03.117 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-04-10 14:28:03.135 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-04-10 14:28:03.159 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-04-10 14:28:03.173 INFO  com.github.frankzengjj.Wiki.WikiApplication       :61   [32m                  [0;39m Started WikiApplication in 5.399 seconds (JVM running for 6.464)
+2021-04-10 14:28:26.272 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-10 14:28:26.272 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-04-10 14:28:26.275 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 2 ms
+2021-04-10 14:28:26.593 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 14:28:26.596 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/save POST
+2021-04-10 14:28:26.597 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.save
+2021-04-10 14:28:26.598 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 14:28:26.737 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"loginName":"test","name":"dsafad"}]
+2021-04-10 14:28:26.902 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2021-04-10 14:28:29.096 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2021-04-10 14:28:29.121 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? )
+2021-04-10 14:28:29.199 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==> Parameters: test(String)
+2021-04-10 14:28:29.332 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-04-10 14:28:29.334 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 1, test, 测试, test
+2021-04-10 14:28:29.336 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m <==      Total: 1
+2021-04-10 14:28:29.350 WARN  c.g.f.Wiki.controller.ControllerExceptionHandler  :45   [32m                  [0;39m Business Exception：Login Name Already Exists
+2021-04-10 14:28:29.392 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [com.github.frankzengjj.Wiki.exception.BusinessException: Login Name Already Exists]
+2021-04-10 14:31:53.962 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-10 14:31:53.970 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2021-04-10 14:31:54.895 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2021-04-10 14:31:55.298 INFO  com.github.frankzengjj.Wiki.WikiApplication       :55   [32m                  [0;39m Starting WikiApplication using Java 14.0.1 on Tianyus-MacBook-Air.local with PID 55344 (/Users/tianyuzeng/Desktop/github/Wiki/target/classes started by tianyuzeng in /Users/tianyuzeng/Desktop/github/Wiki)
+2021-04-10 14:31:55.299 INFO  com.github.frankzengjj.Wiki.WikiApplication       :662  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-04-10 14:31:55.884 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-04-10 14:31:55.885 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-04-10 14:31:55.886 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-04-10 14:31:55.886 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-10 14:31:55.900 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-04-10 14:31:55.900 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 594 ms
+2021-04-10 14:31:56.441 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-10 14:31:56.754 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-04-10 14:31:56.771 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-04-10 14:31:56.777 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-04-10 14:31:56.782 INFO  com.github.frankzengjj.Wiki.WikiApplication       :61   [32m                  [0;39m Started WikiApplication in 1.723 seconds (JVM running for 240.079)
+2021-04-10 14:31:56.785 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-04-10 14:31:58.193 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-10 14:31:58.302 INFO  com.github.frankzengjj.Wiki.WikiApplication       :55   [32m                  [0;39m Starting WikiApplication using Java 14.0.1 on Tianyus-MacBook-Air.local with PID 55344 (/Users/tianyuzeng/Desktop/github/Wiki/target/classes started by tianyuzeng in /Users/tianyuzeng/Desktop/github/Wiki)
+2021-04-10 14:31:58.303 INFO  com.github.frankzengjj.Wiki.WikiApplication       :662  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-04-10 14:31:58.608 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-04-10 14:31:58.609 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-04-10 14:31:58.610 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-04-10 14:31:58.610 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-10 14:31:58.623 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-04-10 14:31:58.623 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 318 ms
+2021-04-10 14:31:58.949 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-10 14:31:59.088 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-04-10 14:31:59.095 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-04-10 14:31:59.097 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-04-10 14:31:59.100 INFO  com.github.frankzengjj.Wiki.WikiApplication       :61   [32m                  [0;39m Started WikiApplication in 0.828 seconds (JVM running for 242.397)
+2021-04-10 14:31:59.103 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-04-10 14:32:30.763 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-10 14:32:30.764 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-04-10 14:32:30.766 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2021-04-10 14:32:30.812 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 14:32:30.812 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/list GET
+2021-04-10 14:32:30.813 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.list
+2021-04-10 14:32:30.813 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 14:32:30.817 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-04-10 14:32:30.832 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-2 - Starting...
+2021-04-10 14:32:32.207 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-2 - Start completed.
+2021-04-10 14:32:32.313 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-04-10 14:32:32.315 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-04-10 14:32:32.457 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-04-10 14:32:32.457 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 2
+2021-04-10 14:32:32.459 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-04-10 14:32:32.462 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-04-10 14:32:32.464 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-04-10 14:32:32.555 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-04-10 14:32:32.557 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 1, test, 测试, test
+2021-04-10 14:32:32.559 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 36005368958160896, test1, frank, 123456
+2021-04-10 14:32:32.562 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m <==      Total: 2
+2021-04-10 14:32:32.604 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"},{"id":36005368958160896,"loginName":"test1","name":"frank"}],"total":2},"success":true}
+2021-04-10 14:32:32.605 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：1794 ms -------------
+2021-04-10 14:33:23.563 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 14:33:23.564 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/category/all GET
+2021-04-10 14:33:23.565 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.CategoryController.all
+2021-04-10 14:33:23.565 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 14:33:23.566 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: []
+2021-04-10 14:33:23.690 DEBUG c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-04-10 14:33:23.690 DEBUG c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 
+2021-04-10 14:33:23.782 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-04-10 14:33:23.783 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 35288494033211392, 0, Interview, 1
+2021-04-10 14:33:23.784 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 35289857274286080, 35288494033211392, Interview tips, 1
+2021-04-10 14:33:23.785 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-04-10 14:33:23.786 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-04-10 14:33:23.787 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-04-10 14:33:23.787 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-04-10 14:33:23.788 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-04-10 14:33:23.789 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2021-04-10 14:33:23.791 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-04-10 14:33:23.792 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-04-10 14:33:23.793 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-04-10 14:33:23.794 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-04-10 14:33:23.795 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-04-10 14:33:23.796 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2021-04-10 14:33:23.797 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-04-10 14:33:23.798 DEBUG c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 15
+2021-04-10 14:33:23.815 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":[{"id":35288494033211392,"name":"Interview","parent":0,"sort":1},{"id":35289857274286080,"name":"Interview tips","parent":35288494033211392,"sort":1},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501}],"success":true}
+2021-04-10 14:33:23.816 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：253 ms -------------
+2021-04-10 14:33:24.635 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 14:33:24.636 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/list GET
+2021-04-10 14:33:24.636 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.list
+2021-04-10 14:33:24.636 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 14:33:24.637 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-04-10 14:33:24.730 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-04-10 14:33:24.732 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-04-10 14:33:24.838 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-04-10 14:33:24.839 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 2
+2021-04-10 14:33:24.842 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-04-10 14:33:24.843 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-04-10 14:33:24.844 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-04-10 14:33:24.932 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-04-10 14:33:24.933 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 1, test, 测试, test
+2021-04-10 14:33:24.935 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 36005368958160896, test1, frank, 123456
+2021-04-10 14:33:24.937 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m <==      Total: 2
+2021-04-10 14:33:24.939 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"},{"id":36005368958160896,"loginName":"test1","name":"frank"}],"total":2},"success":true}
+2021-04-10 14:33:24.941 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：306 ms -------------
+2021-04-10 18:35:52.011 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=4h19s659ms).
+2021-04-10 21:12:34.307 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=2h36m42s300ms).
+2021-04-10 21:16:59.639 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 21:16:59.648 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/list GET
+2021-04-10 21:16:59.650 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.list
+2021-04-10 21:16:59.651 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 21:16:59.654 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-04-10 21:16:59.822 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-2 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@445c5c4c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-04-10 21:16:59.916 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-2 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3e383d51 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-04-10 21:17:00.015 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-2 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@76c51da5 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-04-10 21:17:00.109 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-2 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@505d810d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-04-10 21:17:00.228 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-2 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@52f7beb2 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-04-10 21:17:00.351 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-2 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2d5ac308 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-04-10 21:17:00.454 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-2 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@73accb33 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-04-10 21:17:00.555 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-2 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4fc579a2 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-04-10 21:17:00.655 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-2 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@20a85cc6 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-04-10 21:17:00.755 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-2 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5b919958 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-04-10 21:17:01.014 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-04-10 21:17:01.017 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-04-10 21:17:01.133 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-04-10 21:17:01.134 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 2
+2021-04-10 21:17:01.136 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-04-10 21:17:01.138 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-04-10 21:17:01.139 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-04-10 21:17:01.230 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-04-10 21:17:01.231 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 1, test, 测试, test
+2021-04-10 21:17:01.232 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 36005368958160896, test1, frank, 123456
+2021-04-10 21:17:01.233 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m <==      Total: 2
+2021-04-10 21:17:01.235 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"},{"id":36005368958160896,"loginName":"test1","name":"frank"}],"total":2},"success":true}
+2021-04-10 21:17:01.236 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：1598 ms -------------
+2021-04-10 21:18:36.685 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 21:18:36.688 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/list GET
+2021-04-10 21:18:36.689 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.list
+2021-04-10 21:18:36.689 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 21:18:36.693 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-04-10 21:18:36.820 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-04-10 21:18:36.821 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-04-10 21:18:36.938 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-04-10 21:18:36.939 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 2
+2021-04-10 21:18:36.941 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-04-10 21:18:36.942 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-04-10 21:18:36.943 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-04-10 21:18:37.042 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-04-10 21:18:37.043 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 1, test, 测试, test
+2021-04-10 21:18:37.044 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 36005368958160896, test1, frank, 123456
+2021-04-10 21:18:37.045 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m <==      Total: 2
+2021-04-10 21:18:37.046 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"},{"id":36005368958160896,"loginName":"test1","name":"frank"}],"total":2},"success":true}
+2021-04-10 21:18:37.046 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：361 ms -------------
+2021-04-10 21:20:47.259 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 21:20:47.264 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/list GET
+2021-04-10 21:20:47.265 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.list
+2021-04-10 21:20:47.267 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 21:20:47.268 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-04-10 21:20:47.389 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-04-10 21:20:47.394 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-04-10 21:20:47.504 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-04-10 21:20:47.505 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 2
+2021-04-10 21:20:47.507 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-04-10 21:20:47.510 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-04-10 21:20:47.511 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-04-10 21:20:47.602 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-04-10 21:20:47.603 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 1, test, 测试, test
+2021-04-10 21:20:47.604 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 36005368958160896, test1, frank, 123456
+2021-04-10 21:20:47.605 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m <==      Total: 2
+2021-04-10 21:20:47.608 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"},{"id":36005368958160896,"loginName":"test1","name":"frank"}],"total":2},"success":true}
+2021-04-10 21:20:47.608 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：350 ms -------------
+2021-04-10 21:20:47.623 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 21:20:47.624 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/list GET
+2021-04-10 21:20:47.624 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.list
+2021-04-10 21:20:47.624 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 21:20:47.625 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-04-10 21:20:47.626 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-04-10 21:20:47.628 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-04-10 21:20:47.740 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-04-10 21:20:47.740 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 2
+2021-04-10 21:20:47.741 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-04-10 21:20:47.748 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-04-10 21:20:47.749 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-04-10 21:20:47.868 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-04-10 21:20:47.868 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 1, test, 测试, test
+2021-04-10 21:20:47.869 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 36005368958160896, test1, frank, 123456
+2021-04-10 21:20:47.871 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m <==      Total: 2
+2021-04-10 21:20:47.872 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"},{"id":36005368958160896,"loginName":"test1","name":"frank"}],"total":2},"success":true}
+2021-04-10 21:20:47.872 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：249 ms -------------
+2021-04-10 21:20:47.881 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 21:20:47.881 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/list GET
+2021-04-10 21:20:47.882 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.list
+2021-04-10 21:20:47.882 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 21:20:47.883 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-04-10 21:20:47.885 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-04-10 21:20:47.886 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-04-10 21:20:47.994 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-04-10 21:20:47.995 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 2
+2021-04-10 21:20:47.995 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-04-10 21:20:47.996 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-04-10 21:20:47.998 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-04-10 21:20:48.089 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-04-10 21:20:48.089 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 1, test, 测试, test
+2021-04-10 21:20:48.090 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 36005368958160896, test1, frank, 123456
+2021-04-10 21:20:48.090 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m <==      Total: 2
+2021-04-10 21:20:48.093 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"},{"id":36005368958160896,"loginName":"test1","name":"frank"}],"total":2},"success":true}
+2021-04-10 21:20:48.094 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：213 ms -------------
+2021-04-10 21:21:19.711 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 21:21:19.712 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/list GET
+2021-04-10 21:21:19.713 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.list
+2021-04-10 21:21:19.713 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 21:21:19.716 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-04-10 21:21:19.812 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-04-10 21:21:19.813 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-04-10 21:21:19.924 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-04-10 21:21:19.924 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 2
+2021-04-10 21:21:19.925 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-04-10 21:21:19.929 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-04-10 21:21:19.930 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-04-10 21:21:20.025 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-04-10 21:21:20.025 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 1, test, 测试, test
+2021-04-10 21:21:20.026 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 36005368958160896, test1, frank, 123456
+2021-04-10 21:21:20.029 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m <==      Total: 2
+2021-04-10 21:21:20.034 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"},{"id":36005368958160896,"loginName":"test1","name":"frank"}],"total":2},"success":true}
+2021-04-10 21:21:20.034 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：323 ms -------------
+2021-04-10 21:25:23.385 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-10 21:25:23.391 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-2 - Shutdown initiated...
+2021-04-10 21:25:24.362 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-2 - Shutdown completed.
+2021-04-10 21:25:24.761 INFO  com.github.frankzengjj.Wiki.WikiApplication       :55   [32m                  [0;39m Starting WikiApplication using Java 14.0.1 on Tianyus-MacBook-Air.local with PID 55344 (/Users/tianyuzeng/Desktop/github/Wiki/target/classes started by tianyuzeng in /Users/tianyuzeng/Desktop/github/Wiki)
+2021-04-10 21:25:24.761 INFO  com.github.frankzengjj.Wiki.WikiApplication       :662  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-04-10 21:25:25.354 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-04-10 21:25:25.355 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-04-10 21:25:25.360 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-04-10 21:25:25.360 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-10 21:25:25.380 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-04-10 21:25:25.381 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 613 ms
+2021-04-10 21:25:25.876 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-10 21:25:26.107 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-04-10 21:25:26.131 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-04-10 21:25:26.136 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-04-10 21:25:26.140 INFO  com.github.frankzengjj.Wiki.WikiApplication       :61   [32m                  [0;39m Started WikiApplication in 1.598 seconds (JVM running for 1287.544)
+2021-04-10 21:25:26.142 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-04-10 21:25:27.557 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-10 21:25:27.713 INFO  com.github.frankzengjj.Wiki.WikiApplication       :55   [32m                  [0;39m Starting WikiApplication using Java 14.0.1 on Tianyus-MacBook-Air.local with PID 55344 (/Users/tianyuzeng/Desktop/github/Wiki/target/classes started by tianyuzeng in /Users/tianyuzeng/Desktop/github/Wiki)
+2021-04-10 21:25:27.713 INFO  com.github.frankzengjj.Wiki.WikiApplication       :662  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-04-10 21:25:27.952 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-04-10 21:25:27.953 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-04-10 21:25:27.953 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-04-10 21:25:27.954 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-10 21:25:27.964 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-04-10 21:25:27.965 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 249 ms
+2021-04-10 21:25:28.278 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-10 21:25:28.433 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-04-10 21:25:28.438 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-04-10 21:25:28.440 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-04-10 21:25:28.442 INFO  com.github.frankzengjj.Wiki.WikiApplication       :61   [32m                  [0;39m Started WikiApplication in 0.763 seconds (JVM running for 1289.846)
+2021-04-10 21:25:28.443 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-04-10 21:26:04.016 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-10 21:26:04.017 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-04-10 21:26:04.019 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 2 ms
+2021-04-10 21:26:04.106 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 21:26:04.106 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/list GET
+2021-04-10 21:26:04.107 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.list
+2021-04-10 21:26:04.107 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 21:26:04.109 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-04-10 21:26:04.121 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-3 - Starting...
+2021-04-10 21:26:05.416 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-3 - Start completed.
+2021-04-10 21:26:05.418 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-04-10 21:26:05.418 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-04-10 21:26:05.530 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-04-10 21:26:05.530 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 2
+2021-04-10 21:26:05.535 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-04-10 21:26:05.536 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-04-10 21:26:05.537 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-04-10 21:26:05.635 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-04-10 21:26:05.636 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 1, test, 测试, test
+2021-04-10 21:26:05.649 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 36005368958160896, test1, frank, 123456
+2021-04-10 21:26:05.650 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m <==      Total: 2
+2021-04-10 21:26:05.666 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"},{"id":36005368958160896,"loginName":"test1","name":"frank"}],"total":2},"success":true}
+2021-04-10 21:26:05.666 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：1561 ms -------------
+2021-04-10 21:26:25.682 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 21:26:25.683 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/list GET
+2021-04-10 21:26:25.684 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.list
+2021-04-10 21:26:25.684 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 21:26:25.684 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-04-10 21:26:25.777 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-04-10 21:26:25.778 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-04-10 21:26:25.885 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-04-10 21:26:25.905 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 2
+2021-04-10 21:26:25.906 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-04-10 21:26:25.907 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-04-10 21:26:25.908 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-04-10 21:26:25.999 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-04-10 21:26:26.000 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 1, test, 测试, test
+2021-04-10 21:26:26.001 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 36005368958160896, test1, frank, 123456
+2021-04-10 21:26:26.002 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m <==      Total: 2
+2021-04-10 21:26:26.004 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"},{"id":36005368958160896,"loginName":"test1","name":"frank"}],"total":2},"success":true}
+2021-04-10 21:26:26.005 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：323 ms -------------
+2021-04-10 21:26:40.866 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 21:26:40.866 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/save POST
+2021-04-10 21:26:40.867 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.save
+2021-04-10 21:26:40.867 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 21:26:40.869 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"id":36005368958160896,"loginName":"test1","name":"frank"}]
+2021-04-10 21:26:40.988 DEBUG c.g.f.W.m.UserMapper.updateByPrimaryKeySelective  :137  [32m                  [0;39m ==>  Preparing: update user SET `name` = ?, `password` = ? where id = ?
+2021-04-10 21:26:40.991 DEBUG c.g.f.W.m.UserMapper.updateByPrimaryKeySelective  :137  [32m                  [0;39m ==> Parameters: frank(String), ee2fe7f6cb49ce0cf6bc62d9c6a7ebf6(String), 36005368958160896(Long)
+2021-04-10 21:26:41.194 DEBUG c.g.f.W.m.UserMapper.updateByPrimaryKeySelective  :137  [32m                  [0;39m <==    Updates: 1
+2021-04-10 21:26:41.196 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"success":true}
+2021-04-10 21:26:41.197 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：331 ms -------------
+2021-04-10 21:26:41.255 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 21:26:41.256 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/list GET
+2021-04-10 21:26:41.256 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.list
+2021-04-10 21:26:41.256 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 21:26:41.257 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-04-10 21:26:41.260 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-04-10 21:26:41.260 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-04-10 21:26:41.363 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-04-10 21:26:41.363 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 2
+2021-04-10 21:26:41.364 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-04-10 21:26:41.365 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-04-10 21:26:41.366 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-04-10 21:26:41.455 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-04-10 21:26:41.455 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 1, test, 测试, test
+2021-04-10 21:26:41.456 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 36005368958160896, test1, frank, ee2fe7f6cb49ce0cf6bc62d9c6a7ebf6
+2021-04-10 21:26:41.456 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m <==      Total: 2
+2021-04-10 21:26:41.457 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"},{"id":36005368958160896,"loginName":"test1","name":"frank"}],"total":2},"success":true}
+2021-04-10 21:26:41.458 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：203 ms -------------
+2021-04-10 21:29:32.577 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-10 21:29:32.583 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-3 - Shutdown initiated...
+2021-04-10 21:29:33.571 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-3 - Shutdown completed.
+2021-04-10 21:29:34.276 INFO  com.github.frankzengjj.Wiki.WikiApplication       :55   [32m                  [0;39m Starting WikiApplication using Java 14.0.1 on Tianyus-MacBook-Air.local with PID 55344 (/Users/tianyuzeng/Desktop/github/Wiki/target/classes started by tianyuzeng in /Users/tianyuzeng/Desktop/github/Wiki)
+2021-04-10 21:29:34.276 INFO  com.github.frankzengjj.Wiki.WikiApplication       :662  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-04-10 21:29:35.061 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-04-10 21:29:35.062 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-04-10 21:29:35.062 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-04-10 21:29:35.063 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-10 21:29:35.078 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-04-10 21:29:35.079 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 794 ms
+2021-04-10 21:29:35.955 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-10 21:29:36.326 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-04-10 21:29:36.334 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-04-10 21:29:36.337 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-04-10 21:29:36.340 INFO  com.github.frankzengjj.Wiki.WikiApplication       :61   [32m                  [0;39m Started WikiApplication in 2.28 seconds (JVM running for 1537.758)
+2021-04-10 21:29:36.342 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-04-10 21:29:37.751 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-10 21:29:37.867 INFO  com.github.frankzengjj.Wiki.WikiApplication       :55   [32m                  [0;39m Starting WikiApplication using Java 14.0.1 on Tianyus-MacBook-Air.local with PID 55344 (/Users/tianyuzeng/Desktop/github/Wiki/target/classes started by tianyuzeng in /Users/tianyuzeng/Desktop/github/Wiki)
+2021-04-10 21:29:37.868 INFO  com.github.frankzengjj.Wiki.WikiApplication       :662  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-04-10 21:29:38.232 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-04-10 21:29:38.233 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-04-10 21:29:38.233 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-04-10 21:29:38.234 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-10 21:29:38.246 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-04-10 21:29:38.248 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 378 ms
+2021-04-10 21:29:38.551 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-10 21:29:38.694 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-04-10 21:29:38.698 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-04-10 21:29:38.700 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-04-10 21:29:38.703 INFO  com.github.frankzengjj.Wiki.WikiApplication       :61   [32m                  [0;39m Started WikiApplication in 0.875 seconds (JVM running for 1540.121)
+2021-04-10 21:29:38.704 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-04-10 21:31:24.785 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-10 21:31:24.802 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-04-10 21:31:24.813 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 11 ms
+2021-04-10 21:31:24.987 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 21:31:24.990 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/list GET
+2021-04-10 21:31:24.990 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.list
+2021-04-10 21:31:24.992 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 21:31:24.997 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-04-10 21:31:25.055 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-4 - Starting...
+2021-04-10 21:31:26.352 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-4 - Start completed.
+2021-04-10 21:31:26.357 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-04-10 21:31:26.359 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-04-10 21:31:26.468 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-04-10 21:31:26.469 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 2
+2021-04-10 21:31:26.470 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-04-10 21:31:26.471 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-04-10 21:31:26.472 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-04-10 21:31:26.565 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-04-10 21:31:26.567 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 1, test, 测试, test
+2021-04-10 21:31:26.568 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 36005368958160896, test1, frank, ee2fe7f6cb49ce0cf6bc62d9c6a7ebf6
+2021-04-10 21:31:26.569 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m <==      Total: 2
+2021-04-10 21:31:26.587 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"},{"id":36005368958160896,"loginName":"test1","name":"frank"}],"total":2},"success":true}
+2021-04-10 21:31:26.588 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：1602 ms -------------
+2021-04-10 21:31:40.870 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 21:31:40.871 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/save POST
+2021-04-10 21:31:40.872 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.save
+2021-04-10 21:31:40.874 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 21:31:40.876 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"id":36005368958160896,"loginName":"test1","name":"frank"}]
+2021-04-10 21:31:40.981 DEBUG c.g.f.W.m.UserMapper.updateByPrimaryKeySelective  :137  [32m                  [0;39m ==>  Preparing: update user SET `name` = ? where id = ?
+2021-04-10 21:31:40.982 DEBUG c.g.f.W.m.UserMapper.updateByPrimaryKeySelective  :137  [32m                  [0;39m ==> Parameters: frank(String), 36005368958160896(Long)
+2021-04-10 21:31:41.171 DEBUG c.g.f.W.m.UserMapper.updateByPrimaryKeySelective  :137  [32m                  [0;39m <==    Updates: 1
+2021-04-10 21:31:41.174 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"success":true}
+2021-04-10 21:31:41.174 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：304 ms -------------
+2021-04-10 21:31:41.230 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 21:31:41.230 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/list GET
+2021-04-10 21:31:41.231 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.list
+2021-04-10 21:31:41.231 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 21:31:41.232 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-04-10 21:31:41.234 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-04-10 21:31:41.234 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-04-10 21:31:41.352 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-04-10 21:31:41.354 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 2
+2021-04-10 21:31:41.355 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-04-10 21:31:41.356 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-04-10 21:31:41.357 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-04-10 21:31:41.451 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-04-10 21:31:41.452 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 1, test, 测试, test
+2021-04-10 21:31:41.453 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 36005368958160896, test1, frank, ee2fe7f6cb49ce0cf6bc62d9c6a7ebf6
+2021-04-10 21:31:41.453 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m <==      Total: 2
+2021-04-10 21:31:41.455 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"},{"id":36005368958160896,"loginName":"test1","name":"frank"}],"total":2},"success":true}
+2021-04-10 21:31:41.456 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：227 ms -------------
+2021-04-10 21:31:56.057 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 21:31:56.058 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/save POST
+2021-04-10 21:31:56.059 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.save
+2021-04-10 21:31:56.059 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 21:31:56.060 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"id":36005368958160896,"loginName":"test1","name":"frank"}]
+2021-04-10 21:31:56.168 DEBUG c.g.f.W.m.UserMapper.updateByPrimaryKeySelective  :137  [32m                  [0;39m ==>  Preparing: update user SET `name` = ? where id = ?
+2021-04-10 21:31:56.169 DEBUG c.g.f.W.m.UserMapper.updateByPrimaryKeySelective  :137  [32m                  [0;39m ==> Parameters: frank(String), 36005368958160896(Long)
+2021-04-10 21:31:56.353 DEBUG c.g.f.W.m.UserMapper.updateByPrimaryKeySelective  :137  [32m                  [0;39m <==    Updates: 1
+2021-04-10 21:31:56.353 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"success":true}
+2021-04-10 21:31:56.354 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：297 ms -------------
+2021-04-10 21:31:56.412 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 21:31:56.412 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/list GET
+2021-04-10 21:31:56.413 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.list
+2021-04-10 21:31:56.413 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 21:31:56.414 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-04-10 21:31:56.417 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-04-10 21:31:56.418 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-04-10 21:31:56.533 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-04-10 21:31:56.533 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 2
+2021-04-10 21:31:56.534 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-04-10 21:31:56.535 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-04-10 21:31:56.536 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-04-10 21:31:56.628 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-04-10 21:31:56.629 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 1, test, 测试, test
+2021-04-10 21:31:56.630 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 36005368958160896, test1, frank, ee2fe7f6cb49ce0cf6bc62d9c6a7ebf6
+2021-04-10 21:31:56.630 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m <==      Total: 2
+2021-04-10 21:31:56.631 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"},{"id":36005368958160896,"loginName":"test1","name":"frank"}],"total":2},"success":true}
+2021-04-10 21:31:56.632 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：220 ms -------------
+2021-04-10 21:40:16.045 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-10 21:40:16.052 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-4 - Shutdown initiated...
+2021-04-10 21:40:16.988 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-4 - Shutdown completed.
+2021-04-10 21:40:17.348 INFO  com.github.frankzengjj.Wiki.WikiApplication       :55   [32m                  [0;39m Starting WikiApplication using Java 14.0.1 on Tianyus-MacBook-Air.local with PID 55344 (/Users/tianyuzeng/Desktop/github/Wiki/target/classes started by tianyuzeng in /Users/tianyuzeng/Desktop/github/Wiki)
+2021-04-10 21:40:17.349 INFO  com.github.frankzengjj.Wiki.WikiApplication       :662  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-04-10 21:40:18.037 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-04-10 21:40:18.038 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-04-10 21:40:18.038 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-04-10 21:40:18.039 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-10 21:40:18.053 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-04-10 21:40:18.054 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 702 ms
+2021-04-10 21:40:18.649 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-10 21:40:18.947 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-04-10 21:40:18.953 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-04-10 21:40:18.955 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-04-10 21:40:18.959 INFO  com.github.frankzengjj.Wiki.WikiApplication       :61   [32m                  [0;39m Started WikiApplication in 1.707 seconds (JVM running for 2180.364)
+2021-04-10 21:40:18.961 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-04-10 21:40:20.388 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-10 21:40:20.530 INFO  com.github.frankzengjj.Wiki.WikiApplication       :55   [32m                  [0;39m Starting WikiApplication using Java 14.0.1 on Tianyus-MacBook-Air.local with PID 55344 (/Users/tianyuzeng/Desktop/github/Wiki/target/classes started by tianyuzeng in /Users/tianyuzeng/Desktop/github/Wiki)
+2021-04-10 21:40:20.531 INFO  com.github.frankzengjj.Wiki.WikiApplication       :662  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-04-10 21:40:20.866 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-04-10 21:40:20.867 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-04-10 21:40:20.867 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-04-10 21:40:20.867 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-10 21:40:20.879 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-04-10 21:40:20.879 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 345 ms
+2021-04-10 21:40:21.222 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-10 21:40:21.357 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-04-10 21:40:21.361 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-04-10 21:40:21.363 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-04-10 21:40:21.366 INFO  com.github.frankzengjj.Wiki.WikiApplication       :61   [32m                  [0;39m Started WikiApplication in 0.865 seconds (JVM running for 2182.77)
+2021-04-10 21:40:21.367 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-04-10 21:41:28.241 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-10 21:41:28.242 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-04-10 21:41:28.243 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
+2021-04-10 21:41:28.265 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 21:41:28.266 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/list GET
+2021-04-10 21:41:28.267 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.list
+2021-04-10 21:41:28.267 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 21:41:28.269 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-04-10 21:41:28.280 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-5 - Starting...
+2021-04-10 21:41:29.558 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-5 - Start completed.
+2021-04-10 21:41:29.561 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-04-10 21:41:29.562 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-04-10 21:41:29.671 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-04-10 21:41:29.672 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 2
+2021-04-10 21:41:29.673 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-04-10 21:41:29.674 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-04-10 21:41:29.676 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-04-10 21:41:29.768 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-04-10 21:41:29.769 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 1, test, 测试, test
+2021-04-10 21:41:29.771 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 36005368958160896, test1, frank, ee2fe7f6cb49ce0cf6bc62d9c6a7ebf6
+2021-04-10 21:41:29.772 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m <==      Total: 2
+2021-04-10 21:41:29.786 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"},{"id":36005368958160896,"loginName":"test1","name":"frank"}],"total":2},"success":true}
+2021-04-10 21:41:29.787 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：1521 ms -------------
+2021-04-10 21:44:05.310 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 21:44:05.310 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/list GET
+2021-04-10 21:44:05.311 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.list
+2021-04-10 21:44:05.311 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 21:44:05.311 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-04-10 21:44:05.413 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-04-10 21:44:05.414 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-04-10 21:44:05.519 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-04-10 21:44:05.519 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 2
+2021-04-10 21:44:05.520 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-04-10 21:44:05.521 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-04-10 21:44:05.522 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-04-10 21:44:05.620 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-04-10 21:44:05.621 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 1, test, 测试, test
+2021-04-10 21:44:05.621 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 36005368958160896, test1, frank, ee2fe7f6cb49ce0cf6bc62d9c6a7ebf6
+2021-04-10 21:44:05.621 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m <==      Total: 2
+2021-04-10 21:44:05.622 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"},{"id":36005368958160896,"loginName":"test1","name":"frank"}],"total":2},"success":true}
+2021-04-10 21:44:05.623 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：314 ms -------------
+2021-04-10 21:45:34.695 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 21:45:34.697 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/list GET
+2021-04-10 21:45:34.697 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.list
+2021-04-10 21:45:34.697 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 21:45:34.698 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-04-10 21:45:34.791 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-04-10 21:45:34.793 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-04-10 21:45:34.902 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-04-10 21:45:34.902 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 2
+2021-04-10 21:45:34.903 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-04-10 21:45:34.904 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-04-10 21:45:34.905 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-04-10 21:45:34.995 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-04-10 21:45:34.996 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 1, test, 测试, test
+2021-04-10 21:45:34.996 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 36005368958160896, test1, frank, ee2fe7f6cb49ce0cf6bc62d9c6a7ebf6
+2021-04-10 21:45:34.996 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m <==      Total: 2
+2021-04-10 21:45:34.997 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"},{"id":36005368958160896,"loginName":"test1","name":"frank"}],"total":2},"success":true}
+2021-04-10 21:45:34.997 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：302 ms -------------
+2021-04-10 21:48:26.336 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 21:48:26.337 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/list GET
+2021-04-10 21:48:26.341 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.list
+2021-04-10 21:48:26.342 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 21:48:26.343 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-04-10 21:48:26.533 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-04-10 21:48:26.534 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-04-10 21:48:26.642 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-04-10 21:48:26.642 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 2
+2021-04-10 21:48:26.642 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-04-10 21:48:26.643 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-04-10 21:48:26.644 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-04-10 21:48:26.953 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-04-10 21:48:26.954 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 1, test, 测试, test
+2021-04-10 21:48:26.957 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 36005368958160896, test1, frank, ee2fe7f6cb49ce0cf6bc62d9c6a7ebf6
+2021-04-10 21:48:26.957 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m <==      Total: 2
+2021-04-10 21:48:26.959 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"},{"id":36005368958160896,"loginName":"test1","name":"frank"}],"total":2},"success":true}
+2021-04-10 21:48:26.960 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：624 ms -------------
+2021-04-10 21:48:47.268 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 21:48:47.269 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/reset_password POST
+2021-04-10 21:48:47.269 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.resetPassowrd
+2021-04-10 21:48:47.269 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 21:48:47.271 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"id":36005368958160896}]
+2021-04-10 21:48:47.381 DEBUG c.g.f.W.m.UserMapper.updateByPrimaryKeySelective  :137  [32m                  [0;39m ==>  Preparing: update user SET `password` = ? where id = ?
+2021-04-10 21:48:47.383 DEBUG c.g.f.W.m.UserMapper.updateByPrimaryKeySelective  :137  [32m                  [0;39m ==> Parameters: badac3d021b37a1fc6f4d5c57131a66a(String), 36005368958160896(Long)
+2021-04-10 21:48:47.584 DEBUG c.g.f.W.m.UserMapper.updateByPrimaryKeySelective  :137  [32m                  [0;39m <==    Updates: 1
+2021-04-10 21:48:47.585 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"success":true}
+2021-04-10 21:48:47.586 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：318 ms -------------
+2021-04-10 21:48:47.644 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 21:48:47.645 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/list GET
+2021-04-10 21:48:47.646 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.list
+2021-04-10 21:48:47.646 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 21:48:47.647 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-04-10 21:48:47.650 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-04-10 21:48:47.651 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-04-10 21:48:47.780 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-04-10 21:48:47.780 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 2
+2021-04-10 21:48:47.781 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-04-10 21:48:47.782 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-04-10 21:48:47.783 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-04-10 21:48:47.880 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-04-10 21:48:47.881 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 1, test, 测试, test
+2021-04-10 21:48:47.881 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 36005368958160896, test1, frank, badac3d021b37a1fc6f4d5c57131a66a
+2021-04-10 21:48:47.882 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m <==      Total: 2
+2021-04-10 21:48:47.883 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"},{"id":36005368958160896,"loginName":"test1","name":"frank"}],"total":2},"success":true}
+2021-04-10 21:48:47.883 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：239 ms -------------
+2021-04-10 21:48:55.376 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 21:48:55.376 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/save POST
+2021-04-10 21:48:55.376 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.save
+2021-04-10 21:48:55.377 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 21:48:55.377 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"id":36005368958160896,"loginName":"test1","name":"franktest"}]
+2021-04-10 21:48:55.491 DEBUG c.g.f.W.m.UserMapper.updateByPrimaryKeySelective  :137  [32m                  [0;39m ==>  Preparing: update user SET `name` = ? where id = ?
+2021-04-10 21:48:55.492 DEBUG c.g.f.W.m.UserMapper.updateByPrimaryKeySelective  :137  [32m                  [0;39m ==> Parameters: franktest(String), 36005368958160896(Long)
+2021-04-10 21:48:55.683 DEBUG c.g.f.W.m.UserMapper.updateByPrimaryKeySelective  :137  [32m                  [0;39m <==    Updates: 1
+2021-04-10 21:48:55.683 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"success":true}
+2021-04-10 21:48:55.683 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：307 ms -------------
+2021-04-10 21:48:55.721 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 21:48:55.722 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/list GET
+2021-04-10 21:48:55.723 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.list
+2021-04-10 21:48:55.723 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 21:48:55.724 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-04-10 21:48:55.726 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-04-10 21:48:55.727 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-04-10 21:48:55.836 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-04-10 21:48:55.837 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 2
+2021-04-10 21:48:55.837 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-04-10 21:48:55.838 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-04-10 21:48:55.839 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-04-10 21:48:55.930 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-04-10 21:48:55.931 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 1, test, 测试, test
+2021-04-10 21:48:55.932 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 36005368958160896, test1, franktest, badac3d021b37a1fc6f4d5c57131a66a
+2021-04-10 21:48:55.932 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m <==      Total: 2
+2021-04-10 21:48:55.935 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"},{"id":36005368958160896,"loginName":"test1","name":"franktest"}],"total":2},"success":true}
+2021-04-10 21:48:55.935 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：214 ms -------------
+2021-04-10 21:49:02.959 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 21:49:02.960 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/reset_password POST
+2021-04-10 21:49:02.961 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.resetPassowrd
+2021-04-10 21:49:02.962 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 21:49:02.962 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"id":36005368958160896}]
+2021-04-10 21:49:03.060 DEBUG c.g.f.W.m.UserMapper.updateByPrimaryKeySelective  :137  [32m                  [0;39m ==>  Preparing: update user SET `password` = ? where id = ?
+2021-04-10 21:49:03.061 DEBUG c.g.f.W.m.UserMapper.updateByPrimaryKeySelective  :137  [32m                  [0;39m ==> Parameters: fb09b64e309e1c33e7cf8cfe99b07bd5(String), 36005368958160896(Long)
+2021-04-10 21:49:03.251 DEBUG c.g.f.W.m.UserMapper.updateByPrimaryKeySelective  :137  [32m                  [0;39m <==    Updates: 1
+2021-04-10 21:49:03.253 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"success":true}
+2021-04-10 21:49:03.254 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：295 ms -------------
+2021-04-10 21:49:03.285 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 21:49:03.286 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/list GET
+2021-04-10 21:49:03.286 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.list
+2021-04-10 21:49:03.287 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 21:49:03.287 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-04-10 21:49:03.290 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-04-10 21:49:03.291 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-04-10 21:49:03.389 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-04-10 21:49:03.390 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 2
+2021-04-10 21:49:03.390 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-04-10 21:49:03.390 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-04-10 21:49:03.391 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-04-10 21:49:03.482 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-04-10 21:49:03.483 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 1, test, 测试, test
+2021-04-10 21:49:03.485 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 36005368958160896, test1, franktest, fb09b64e309e1c33e7cf8cfe99b07bd5
+2021-04-10 21:49:03.485 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m <==      Total: 2
+2021-04-10 21:49:03.486 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"},{"id":36005368958160896,"loginName":"test1","name":"franktest"}],"total":2},"success":true}
+2021-04-10 21:49:03.487 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：202 ms -------------
+2021-04-10 22:03:07.978 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-5 - Thread starvation or clock leap detected (housekeeper delta=9m38s221ms).
+2021-04-10 22:13:12.406 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-5 - Thread starvation or clock leap detected (housekeeper delta=7m34s362ms).
+2021-04-10 22:42:24.260 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 22:42:24.272 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/category/all GET
+2021-04-10 22:42:24.282 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.CategoryController.all
+2021-04-10 22:42:24.284 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 22:42:24.286 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: []
+2021-04-10 22:42:24.504 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-5 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3fafff21 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-04-10 22:42:24.647 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-5 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@37c4872 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-04-10 22:42:24.781 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-5 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@71d10b8e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-04-10 22:42:24.888 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-5 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@31c7a462 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-04-10 22:42:25.105 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-5 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@38c2af2a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-04-10 22:42:25.222 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-5 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@591c4f98 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-04-10 22:42:25.325 DEBUG c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-04-10 22:42:25.327 DEBUG c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 
+2021-04-10 22:42:25.439 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-04-10 22:42:25.440 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 35288494033211392, 0, Interview, 1
+2021-04-10 22:42:25.446 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 35289857274286080, 35288494033211392, Interview tips, 1
+2021-04-10 22:42:25.448 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-04-10 22:42:25.449 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-04-10 22:42:25.450 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-04-10 22:42:25.452 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-04-10 22:42:25.453 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-04-10 22:42:25.454 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2021-04-10 22:42:25.455 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-04-10 22:42:25.456 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-04-10 22:42:25.457 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-04-10 22:42:25.458 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-04-10 22:42:25.458 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-04-10 22:42:25.458 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2021-04-10 22:42:25.459 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-04-10 22:42:25.459 DEBUG c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 15
+2021-04-10 22:42:25.483 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":[{"id":35288494033211392,"name":"Interview","parent":0,"sort":1},{"id":35289857274286080,"name":"Interview tips","parent":35288494033211392,"sort":1},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501}],"success":true}
+2021-04-10 22:42:25.484 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：1225 ms -------------
+2021-04-10 22:42:27.872 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 22:42:27.872 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/ebook/list GET
+2021-04-10 22:42:27.872 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.EbookController.list
+2021-04-10 22:42:27.873 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 22:42:27.874 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"categoryId2":35289857274286080,"page":1,"size":1000}]
+2021-04-10 22:42:28.047 DEBUG c.g.f.W.mapper.EbookMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2021-04-10 22:42:28.048 DEBUG c.g.f.W.mapper.EbookMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==> Parameters: 35289857274286080(Long)
+2021-04-10 22:42:28.216 TRACE c.g.f.W.mapper.EbookMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==    Columns: count(0)
+2021-04-10 22:42:28.216 TRACE c.g.f.W.mapper.EbookMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==        Row: 1
+2021-04-10 22:42:28.217 DEBUG c.g.f.W.mapper.EbookMapper.selectByExample_COUNT  :137  [32m                  [0;39m <==      Total: 1
+2021-04-10 22:42:28.218 DEBUG c.g.f.Wiki.mapper.EbookMapper.selectByExample     :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( category2_id = ? ) LIMIT ?
+2021-04-10 22:42:28.219 DEBUG c.g.f.Wiki.mapper.EbookMapper.selectByExample     :137  [32m                  [0;39m ==> Parameters: 35289857274286080(Long), 1000(Integer)
+2021-04-10 22:42:28.317 TRACE c.g.f.Wiki.mapper.EbookMapper.selectByExample     :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-04-10 22:42:28.319 TRACE c.g.f.Wiki.mapper.EbookMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 35288661956366336, interview tips, 35288494033211392, 35289857274286080, interview tips for you, null, null, null, null
+2021-04-10 22:42:28.322 DEBUG c.g.f.Wiki.mapper.EbookMapper.selectByExample     :137  [32m                  [0;39m <==      Total: 1
+2021-04-10 22:42:28.335 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":{"list":[{"category1Id":35288494033211392,"category2Id":35289857274286080,"description":"interview tips for you","id":35288661956366336,"name":"interview tips"}],"total":1},"success":true}
+2021-04-10 22:42:28.336 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：464 ms -------------
+2021-04-10 22:42:30.280 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 22:42:30.281 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/doc/all/35288661956366336 GET
+2021-04-10 22:42:30.281 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.DocController.all
+2021-04-10 22:42:30.282 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 22:42:30.282 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [35288661956366336]
+2021-04-10 22:42:30.386 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc WHERE ( ebook_id = ? ) order by sort asc
+2021-04-10 22:42:30.387 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 35288661956366336(Long)
+2021-04-10 22:42:30.480 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-04-10 22:42:30.481 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 35289451429236736, 35288661956366336, 0, top 10 interview tips, 1, null, null
+2021-04-10 22:42:30.483 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 35289588910133248, 35288661956366336, 35289451429236736, tip 1 explanation, 1, null, null
+2021-04-10 22:42:30.484 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 2
+2021-04-10 22:42:30.496 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":[{"ebookId":35288661956366336,"id":35289451429236736,"name":"top 10 interview tips","parent":0,"sort":1},{"ebookId":35288661956366336,"id":35289588910133248,"name":"tip 1 explanation","parent":35289451429236736,"sort":1}],"success":true}
+2021-04-10 22:42:30.496 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：216 ms -------------
+2021-04-10 22:42:30.538 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 22:42:30.539 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/doc/content/35289451429236736 GET
+2021-04-10 22:42:30.539 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.DocController.getContent
+2021-04-10 22:42:30.539 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 22:42:30.540 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [35289451429236736]
+2021-04-10 22:42:30.540 DEBUG c.g.f.Wiki.mapper.ContentMapper.selectByPrimaryKey:137  [32m                  [0;39m ==>  Preparing: select id , content from content where id = ?
+2021-04-10 22:42:30.541 DEBUG c.g.f.Wiki.mapper.ContentMapper.selectByPrimaryKey:137  [32m                  [0;39m ==> Parameters: 35289451429236736(Long)
+2021-04-10 22:42:30.651 TRACE c.g.f.Wiki.mapper.ContentMapper.selectByPrimaryKey:143  [32m                  [0;39m <==    Columns: id, content
+2021-04-10 22:42:30.653 TRACE c.g.f.Wiki.mapper.ContentMapper.selectByPrimaryKey:143  [32m                  [0;39m <==        Row: 35289451429236736, <<BLOB>>
+2021-04-10 22:42:30.654 DEBUG c.g.f.Wiki.mapper.ContentMapper.selectByPrimaryKey:137  [32m                  [0;39m <==      Total: 1
+2021-04-10 22:42:30.655 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":"<ul><li>tip1</li><li>tip2</li><li>tip3</li></ul>","success":true}
+2021-04-10 22:42:30.655 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：117 ms -------------
+2021-04-10 22:42:31.465 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 22:42:31.465 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/doc/content/35289588910133248 GET
+2021-04-10 22:42:31.465 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.DocController.getContent
+2021-04-10 22:42:31.466 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 22:42:31.466 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [35289588910133248]
+2021-04-10 22:42:31.554 DEBUG c.g.f.Wiki.mapper.ContentMapper.selectByPrimaryKey:137  [32m                  [0;39m ==>  Preparing: select id , content from content where id = ?
+2021-04-10 22:42:31.555 DEBUG c.g.f.Wiki.mapper.ContentMapper.selectByPrimaryKey:137  [32m                  [0;39m ==> Parameters: 35289588910133248(Long)
+2021-04-10 22:42:31.650 TRACE c.g.f.Wiki.mapper.ContentMapper.selectByPrimaryKey:143  [32m                  [0;39m <==    Columns: id, content
+2021-04-10 22:42:31.652 TRACE c.g.f.Wiki.mapper.ContentMapper.selectByPrimaryKey:143  [32m                  [0;39m <==        Row: 35289588910133248, <<BLOB>>
+2021-04-10 22:42:31.653 DEBUG c.g.f.Wiki.mapper.ContentMapper.selectByPrimaryKey:137  [32m                  [0;39m <==      Total: 1
+2021-04-10 22:42:31.655 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":"<p>tip 1 explan</p>","success":true}
+2021-04-10 22:42:31.655 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：190 ms -------------
+2021-04-10 22:42:32.209 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 22:42:32.210 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/doc/content/35289451429236736 GET
+2021-04-10 22:42:32.210 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.DocController.getContent
+2021-04-10 22:42:32.210 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 22:42:32.211 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [35289451429236736]
+2021-04-10 22:42:32.311 DEBUG c.g.f.Wiki.mapper.ContentMapper.selectByPrimaryKey:137  [32m                  [0;39m ==>  Preparing: select id , content from content where id = ?
+2021-04-10 22:42:32.311 DEBUG c.g.f.Wiki.mapper.ContentMapper.selectByPrimaryKey:137  [32m                  [0;39m ==> Parameters: 35289451429236736(Long)
+2021-04-10 22:42:32.414 TRACE c.g.f.Wiki.mapper.ContentMapper.selectByPrimaryKey:143  [32m                  [0;39m <==    Columns: id, content
+2021-04-10 22:42:32.414 TRACE c.g.f.Wiki.mapper.ContentMapper.selectByPrimaryKey:143  [32m                  [0;39m <==        Row: 35289451429236736, <<BLOB>>
+2021-04-10 22:42:32.415 DEBUG c.g.f.Wiki.mapper.ContentMapper.selectByPrimaryKey:137  [32m                  [0;39m <==      Total: 1
+2021-04-10 22:42:32.416 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":"<ul><li>tip1</li><li>tip2</li><li>tip3</li></ul>","success":true}
+2021-04-10 22:42:32.417 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：209 ms -------------
+2021-04-10 22:42:32.915 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 22:42:32.916 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/category/all GET
+2021-04-10 22:42:32.916 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.CategoryController.all
+2021-04-10 22:42:32.917 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 22:42:32.918 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: []
+2021-04-10 22:42:33.006 DEBUG c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-04-10 22:42:33.007 DEBUG c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 
+2021-04-10 22:42:33.095 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-04-10 22:42:33.095 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 35288494033211392, 0, Interview, 1
+2021-04-10 22:42:33.098 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 35289857274286080, 35288494033211392, Interview tips, 1
+2021-04-10 22:42:33.099 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-04-10 22:42:33.100 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-04-10 22:42:33.100 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-04-10 22:42:33.101 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-04-10 22:42:33.101 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-04-10 22:42:33.102 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2021-04-10 22:42:33.103 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-04-10 22:42:33.104 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-04-10 22:42:33.106 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-04-10 22:42:33.107 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-04-10 22:42:33.107 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-04-10 22:42:33.108 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2021-04-10 22:42:33.108 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-04-10 22:42:33.108 DEBUG c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 15
+2021-04-10 22:42:33.113 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":[{"id":35288494033211392,"name":"Interview","parent":0,"sort":1},{"id":35289857274286080,"name":"Interview tips","parent":35288494033211392,"sort":1},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501}],"success":true}
+2021-04-10 22:42:33.114 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：199 ms -------------
+2021-04-10 22:43:13.919 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 22:43:13.920 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/list GET
+2021-04-10 22:43:13.920 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.list
+2021-04-10 22:43:13.921 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 22:43:13.922 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-04-10 22:43:14.022 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-04-10 22:43:14.023 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-04-10 22:43:14.136 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-04-10 22:43:14.138 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 2
+2021-04-10 22:43:14.138 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-04-10 22:43:14.142 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-04-10 22:43:14.143 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-04-10 22:43:14.237 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-04-10 22:43:14.238 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 1, test, 测试, test
+2021-04-10 22:43:14.239 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 36005368958160896, test1, franktest, fb09b64e309e1c33e7cf8cfe99b07bd5
+2021-04-10 22:43:14.290 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m <==      Total: 2
+2021-04-10 22:43:14.304 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"},{"id":36005368958160896,"loginName":"test1","name":"franktest"}],"total":2},"success":true}
+2021-04-10 22:43:14.305 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：386 ms -------------
+2021-04-10 22:43:23.368 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 22:43:23.369 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/delete/36005368958160896 DELETE
+2021-04-10 22:43:23.369 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.delete
+2021-04-10 22:43:23.370 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 22:43:23.370 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [36005368958160896]
+2021-04-10 22:43:23.470 DEBUG c.g.f.Wiki.mapper.UserMapper.deleteByPrimaryKey   :137  [32m                  [0;39m ==>  Preparing: delete from user where id = ?
+2021-04-10 22:43:23.472 DEBUG c.g.f.Wiki.mapper.UserMapper.deleteByPrimaryKey   :137  [32m                  [0;39m ==> Parameters: 36005368958160896(Long)
+2021-04-10 22:43:23.657 DEBUG c.g.f.Wiki.mapper.UserMapper.deleteByPrimaryKey   :137  [32m                  [0;39m <==    Updates: 1
+2021-04-10 22:43:23.658 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"success":true}
+2021-04-10 22:43:23.659 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：291 ms -------------
+2021-04-10 22:43:23.694 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 22:43:23.695 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/list GET
+2021-04-10 22:43:23.696 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.list
+2021-04-10 22:43:23.697 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 22:43:23.702 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-04-10 22:43:23.712 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-04-10 22:43:23.716 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-04-10 22:43:23.825 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-04-10 22:43:23.826 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 1
+2021-04-10 22:43:23.827 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-04-10 22:43:23.829 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-04-10 22:43:23.830 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-04-10 22:43:23.930 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-04-10 22:43:23.930 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 1, test, 测试, test
+2021-04-10 22:43:23.931 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m <==      Total: 1
+2021-04-10 22:43:23.932 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"}],"total":1},"success":true}
+2021-04-10 22:43:23.932 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：238 ms -------------
+2021-04-10 22:43:30.984 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 22:43:30.985 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/delete/1 DELETE
+2021-04-10 22:43:30.985 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.delete
+2021-04-10 22:43:30.985 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 22:43:30.986 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [1]
+2021-04-10 22:43:31.081 DEBUG c.g.f.Wiki.mapper.UserMapper.deleteByPrimaryKey   :137  [32m                  [0;39m ==>  Preparing: delete from user where id = ?
+2021-04-10 22:43:31.082 DEBUG c.g.f.Wiki.mapper.UserMapper.deleteByPrimaryKey   :137  [32m                  [0;39m ==> Parameters: 1(Long)
+2021-04-10 22:43:31.273 DEBUG c.g.f.Wiki.mapper.UserMapper.deleteByPrimaryKey   :137  [32m                  [0;39m <==    Updates: 1
+2021-04-10 22:43:31.274 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"success":true}
+2021-04-10 22:43:31.274 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：290 ms -------------
+2021-04-10 22:43:31.306 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 22:43:31.306 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/list GET
+2021-04-10 22:43:31.307 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.list
+2021-04-10 22:43:31.307 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 22:43:31.308 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-04-10 22:43:31.311 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-04-10 22:43:31.312 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-04-10 22:43:31.400 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-04-10 22:43:31.401 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 0
+2021-04-10 22:43:31.402 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-04-10 22:43:31.403 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":{"list":[],"total":0},"success":true}
+2021-04-10 22:43:31.403 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：97 ms -------------
+2021-04-10 22:43:42.960 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 22:43:42.960 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/save POST
+2021-04-10 22:43:42.961 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.save
+2021-04-10 22:43:42.962 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 22:43:42.962 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"loginName":"test","name":"frankzeng"}]
+2021-04-10 22:43:43.117 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? )
+2021-04-10 22:43:43.118 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==> Parameters: test(String)
+2021-04-10 22:43:43.244 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m <==      Total: 0
+2021-04-10 22:43:43.246 DEBUG c.github.frankzengjj.Wiki.mapper.UserMapper.insert:137  [32m                  [0;39m ==>  Preparing: insert into user (id, login_name, `name`, `password`) values (?, ?, ?, ?)
+2021-04-10 22:43:43.248 DEBUG c.github.frankzengjj.Wiki.mapper.UserMapper.insert:137  [32m                  [0;39m ==> Parameters: 36325286719131648(Long), test(String), frankzeng(String), 7354a1d413535a6c0dc5c209e198d799(String)
+2021-04-10 22:43:43.450 DEBUG c.github.frankzengjj.Wiki.mapper.UserMapper.insert:137  [32m                  [0;39m <==    Updates: 1
+2021-04-10 22:43:43.451 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"success":true}
+2021-04-10 22:43:43.452 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：492 ms -------------
+2021-04-10 22:43:43.488 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 22:43:43.488 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/list GET
+2021-04-10 22:43:43.489 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.list
+2021-04-10 22:43:43.489 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 22:43:43.489 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-04-10 22:43:43.491 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-04-10 22:43:43.492 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-04-10 22:43:43.643 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-04-10 22:43:43.644 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 1
+2021-04-10 22:43:43.644 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-04-10 22:43:43.646 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-04-10 22:43:43.647 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-04-10 22:43:43.760 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-04-10 22:43:43.761 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 36325286719131648, test, frankzeng, 7354a1d413535a6c0dc5c209e198d799
+2021-04-10 22:43:43.761 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m <==      Total: 1
+2021-04-10 22:43:43.762 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":36325286719131648,"loginName":"test","name":"frankzeng"}],"total":1},"success":true}
+2021-04-10 22:43:43.763 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：275 ms -------------
+2021-04-10 22:47:02.518 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 22:47:02.523 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/list GET
+2021-04-10 22:47:02.525 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.list
+2021-04-10 22:47:02.526 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 22:47:02.527 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-04-10 22:47:02.661 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-04-10 22:47:02.665 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-04-10 22:47:02.791 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-04-10 22:47:02.791 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 1
+2021-04-10 22:47:02.792 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-04-10 22:47:02.794 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-04-10 22:47:02.795 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-04-10 22:47:02.906 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-04-10 22:47:02.907 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 36325286719131648, test, frankzeng, 7354a1d413535a6c0dc5c209e198d799
+2021-04-10 22:47:02.908 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m <==      Total: 1
+2021-04-10 22:47:02.910 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":36325286719131648,"loginName":"test","name":"frankzeng"}],"total":1},"success":true}
+2021-04-10 22:47:02.910 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：392 ms -------------
+2021-04-10 22:47:04.266 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-10 22:47:04.268 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-5 - Shutdown initiated...
+2021-04-10 22:47:05.521 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-5 - Shutdown completed.
+2021-04-10 22:47:13.537 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.1.7.Final
+2021-04-10 22:47:13.544 INFO  com.github.frankzengjj.Wiki.WikiApplication       :55   [32m                  [0;39m Starting WikiApplication using Java 14.0.1 on Tianyus-MacBook-Air.local with PID 57081 (/Users/tianyuzeng/Desktop/github/Wiki/target/classes started by tianyuzeng in /Users/tianyuzeng/Desktop/github/Wiki)
+2021-04-10 22:47:13.546 INFO  com.github.frankzengjj.Wiki.WikiApplication       :662  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-04-10 22:47:13.694 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-10 22:47:13.696 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-10 22:47:16.162 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-04-10 22:47:16.176 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-04-10 22:47:16.176 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-04-10 22:47:16.177 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-10 22:47:16.251 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-04-10 22:47:16.251 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 2554 ms
+2021-04-10 22:47:17.262 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-10 22:47:17.729 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-04-10 22:47:17.747 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-04-10 22:47:17.771 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-04-10 22:47:17.783 INFO  com.github.frankzengjj.Wiki.WikiApplication       :61   [32m                  [0;39m Started WikiApplication in 5.328 seconds (JVM running for 6.833)
+2021-04-10 22:47:32.422 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-10 22:47:32.423 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-04-10 22:47:32.426 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 2 ms
+2021-04-10 22:47:32.687 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 22:47:32.689 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/login POST
+2021-04-10 22:47:32.690 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.login
+2021-04-10 22:47:32.691 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 22:47:32.785 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"loginName":"test"}]
+2021-04-10 22:47:32.881 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2021-04-10 22:47:35.012 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2021-04-10 22:47:35.032 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? )
+2021-04-10 22:47:35.117 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==> Parameters: test(String)
+2021-04-10 22:47:35.288 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-04-10 22:47:35.289 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 36325286719131648, test, frankzeng, 7354a1d413535a6c0dc5c209e198d799
+2021-04-10 22:47:35.291 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m <==      Total: 1
+2021-04-10 22:47:35.310 INFO  com.github.frankzengjj.Wiki.service.UserService   :108  [32m                  [0;39m Wrong Password, Input e70e2222a9d67c4f2eae107533359aa4, DB password 7354a1d413535a6c0dc5c209e198d799
+2021-04-10 22:47:35.314 WARN  c.g.f.Wiki.controller.ControllerExceptionHandler  :45   [32m                  [0;39m Business Exception：Incorrect Login Name or Password
+2021-04-10 22:47:35.363 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [com.github.frankzengjj.Wiki.exception.BusinessException: Incorrect Login Name or Password]
+2021-04-10 22:49:51.122 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 22:49:51.129 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/category/all GET
+2021-04-10 22:49:51.130 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.CategoryController.all
+2021-04-10 22:49:51.131 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 22:49:51.131 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: []
+2021-04-10 22:49:51.276 DEBUG c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-04-10 22:49:51.277 DEBUG c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 
+2021-04-10 22:49:51.388 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-04-10 22:49:51.390 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 35288494033211392, 0, Interview, 1
+2021-04-10 22:49:51.391 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 35289857274286080, 35288494033211392, Interview tips, 1
+2021-04-10 22:49:51.393 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-04-10 22:49:51.395 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-04-10 22:49:51.396 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-04-10 22:49:51.397 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-04-10 22:49:51.398 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-04-10 22:49:51.399 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2021-04-10 22:49:51.401 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-04-10 22:49:51.403 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-04-10 22:49:51.404 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-04-10 22:49:51.405 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-04-10 22:49:51.406 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-04-10 22:49:51.408 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2021-04-10 22:49:51.409 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-04-10 22:49:51.411 DEBUG c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 15
+2021-04-10 22:49:51.459 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":[{"id":35288494033211392,"name":"Interview","parent":0,"sort":1},{"id":35289857274286080,"name":"Interview tips","parent":35288494033211392,"sort":1},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501}],"success":true}
+2021-04-10 22:49:51.460 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：338 ms -------------
+2021-04-10 22:50:00.245 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 22:50:00.246 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/login POST
+2021-04-10 22:50:00.248 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.login
+2021-04-10 22:50:00.249 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 22:50:00.250 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"loginName":"test"}]
+2021-04-10 22:50:00.353 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? )
+2021-04-10 22:50:00.353 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==> Parameters: test(String)
+2021-04-10 22:50:00.481 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-04-10 22:50:00.483 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 36325286719131648, test, frankzeng, 7354a1d413535a6c0dc5c209e198d799
+2021-04-10 22:50:00.485 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m <==      Total: 1
+2021-04-10 22:50:00.486 INFO  com.github.frankzengjj.Wiki.service.UserService   :108  [32m                  [0;39m Wrong Password, Input 4db71c791e6a5f87027698565abc76c8, DB password 7354a1d413535a6c0dc5c209e198d799
+2021-04-10 22:50:00.487 WARN  c.g.f.Wiki.controller.ControllerExceptionHandler  :45   [32m                  [0;39m Business Exception：Incorrect Login Name or Password
+2021-04-10 22:50:00.491 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [com.github.frankzengjj.Wiki.exception.BusinessException: Incorrect Login Name or Password]
+2021-04-10 22:50:14.500 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 22:50:14.501 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/login POST
+2021-04-10 22:50:14.502 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.login
+2021-04-10 22:50:14.503 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 22:50:14.503 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"loginName":"test1"}]
+2021-04-10 22:50:14.618 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? )
+2021-04-10 22:50:14.619 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==> Parameters: test1(String)
+2021-04-10 22:50:14.758 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m <==      Total: 0
+2021-04-10 22:50:14.760 INFO  com.github.frankzengjj.Wiki.service.UserService   :101  [32m                  [0;39m Login Name Does Not Exist, test1
+2021-04-10 22:50:14.762 WARN  c.g.f.Wiki.controller.ControllerExceptionHandler  :45   [32m                  [0;39m Business Exception：Incorrect Login Name or Password
+2021-04-10 22:50:14.766 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [com.github.frankzengjj.Wiki.exception.BusinessException: Incorrect Login Name or Password]
+2021-04-10 22:50:26.090 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-10 22:50:26.091 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/user/login POST
+2021-04-10 22:50:26.092 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.UserController.login
+2021-04-10 22:50:26.093 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-10 22:50:26.094 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"loginName":"test"}]
+2021-04-10 22:50:26.204 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? )
+2021-04-10 22:50:26.205 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m ==> Parameters: test(String)
+2021-04-10 22:50:26.311 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-04-10 22:50:26.312 TRACE c.g.f.Wiki.mapper.UserMapper.selectByExample      :143  [32m                  [0;39m <==        Row: 36325286719131648, test, frankzeng, 7354a1d413535a6c0dc5c209e198d799
+2021-04-10 22:50:26.313 DEBUG c.g.f.Wiki.mapper.UserMapper.selectByExample      :137  [32m                  [0;39m <==      Total: 1
+2021-04-10 22:50:26.344 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":{"id":36325286719131648,"loginName":"test","name":"frankzeng"},"success":true}
+2021-04-10 22:50:26.345 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：255 ms -------------
+2021-04-10 22:54:54.106 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m48s897ms).

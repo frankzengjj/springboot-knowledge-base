@@ -25,6 +25,7 @@
                         connectionURL="jdbc:mysql://wiki.co6lmobmgeot.us-east-1.rds.amazonaws.com/wiki"
                         userId="admin"
                         password="RMusQ8wDlJCjguGciz3h">
+            <property name="nullCatalogMeansCurrent" value="true"/>
         </jdbcConnection>
 
         <!-- domain类的位置 -->
@@ -40,12 +41,11 @@
                              targetPackage="com.github.frankzengjj.Wiki.mapper"
                              type="XMLMAPPER"/>
 
-        <table tableName="ebook"/>
         <!--<table tableName="ebook"/>-->
-        <!--<table tableName="category"/>-->
-        <!--<table tableName="doc"/>-->
-        <!--<table tableName="content"/>-->
-        <!--<table tableName="user"/>-->
-<!--        <table tableName="ebook_snapshot"/>-->
+<!--        <table tableName="category"/>-->
+<!--        <table tableName="doc"/>-->
+<!--        <table tableName="content"/>-->
+<!--        <table tableName="user"/>-->
+        <table tableName="ebook_snapshot"/>
     </context>
 </generatorConfiguration>

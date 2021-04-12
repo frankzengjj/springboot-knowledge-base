@@ -1,0 +1,846 @@
+2021-04-07 00:52:50.876 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h12m55s896ms).
+2021-04-07 00:53:51.787 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 00:53:51.788 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/category/all GET
+2021-04-07 00:53:51.788 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.CategoryController.all
+2021-04-07 00:53:51.788 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 00:53:51.789 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: []
+2021-04-07 00:53:51.892 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@678e5246 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-04-07 00:53:51.993 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3fb9ae5 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-04-07 00:53:52.091 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@674a8c81 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-04-07 00:53:52.182 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@72c3fe4c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-04-07 00:53:52.321 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@36e24b91 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-04-07 00:53:52.432 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6911c31a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-04-07 00:53:52.533 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5a0c643d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-04-07 00:53:52.625 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@37d0c0ae (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-04-07 00:53:52.730 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@13caab06 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-04-07 00:53:52.827 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7cd470fb (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-04-07 00:53:53.048 DEBUG c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-04-07 00:53:53.050 DEBUG c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 
+2021-04-07 00:53:53.143 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-04-07 00:53:53.146 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-04-07 00:53:53.147 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-04-07 00:53:53.148 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-04-07 00:53:53.148 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-04-07 00:53:53.149 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-04-07 00:53:53.149 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2021-04-07 00:53:53.150 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-04-07 00:53:53.150 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-04-07 00:53:53.152 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-04-07 00:53:53.153 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-04-07 00:53:53.153 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-04-07 00:53:53.154 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2021-04-07 00:53:53.154 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-04-07 00:53:53.154 DEBUG c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 13
+2021-04-07 00:53:53.157 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501}],"success":true}
+2021-04-07 00:53:53.157 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：1370 ms -------------
+2021-04-07 00:53:53.214 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 00:53:53.214 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/ebook/list GET
+2021-04-07 00:53:53.215 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.EbookController.list
+2021-04-07 00:53:53.216 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 00:53:53.218 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"page":1,"size":100}]
+2021-04-07 00:53:53.219 DEBUG c.g.f.W.mapper.EbookMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2021-04-07 00:53:53.220 DEBUG c.g.f.W.mapper.EbookMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==> Parameters: 
+2021-04-07 00:53:53.318 TRACE c.g.f.W.mapper.EbookMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==    Columns: count(0)
+2021-04-07 00:53:53.319 TRACE c.g.f.W.mapper.EbookMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==        Row: 3
+2021-04-07 00:53:53.319 DEBUG c.g.f.W.mapper.EbookMapper.selectByExample_COUNT  :137  [32m                  [0;39m <==      Total: 1
+2021-04-07 00:53:53.320 DEBUG c.g.f.Wiki.mapper.EbookMapper.selectByExample     :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2021-04-07 00:53:53.320 DEBUG c.g.f.Wiki.mapper.EbookMapper.selectByExample     :137  [32m                  [0;39m ==> Parameters: 100(Integer)
+2021-04-07 00:53:53.411 TRACE c.g.f.Wiki.mapper.EbookMapper.selectByExample     :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-04-07 00:53:53.415 TRACE c.g.f.Wiki.mapper.EbookMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, 200, 202, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2021-04-07 00:53:53.416 TRACE c.g.f.Wiki.mapper.EbookMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, 300, 301, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2021-04-07 00:53:53.417 TRACE c.g.f.Wiki.mapper.EbookMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 4, Mysql 入门教程, 400, 401, 零基础入门 Mysql 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2021-04-07 00:53:53.418 DEBUG c.g.f.Wiki.mapper.EbookMapper.selectByExample     :137  [32m                  [0;39m <==      Total: 3
+2021-04-07 00:53:53.421 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":{"list":[{"category1Id":200,"category2Id":202,"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","docCount":0,"id":2,"name":"Vue 入门教程","viewCount":0,"voteCount":0},{"category1Id":300,"category2Id":301,"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","docCount":0,"id":3,"name":"Python 入门教程","viewCount":0,"voteCount":0},{"category1Id":400,"category2Id":401,"description":"零基础入门 Mysql 开发，企业级应用开发最佳首选框架","docCount":0,"id":4,"name":"Mysql 入门教程","viewCount":0,"voteCount":0}],"total":3},"success":true}
+2021-04-07 00:53:53.422 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：208 ms -------------
+2021-04-07 00:53:56.857 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 00:53:56.858 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/doc/all GET
+2021-04-07 00:53:56.858 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.DocController.all
+2021-04-07 00:53:56.859 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 00:53:56.859 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: []
+2021-04-07 00:53:56.942 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2021-04-07 00:53:56.943 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 
+2021-04-07 00:53:57.033 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-04-07 00:53:57.034 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1, 1, 6, 文档1, 1, 0, 0
+2021-04-07 00:53:57.035 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2021-04-07 00:53:57.036 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2021-04-07 00:53:57.037 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 34859367916507136, 2, 0, test, 1, null, null
+2021-04-07 00:53:57.037 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 34859416369106944, 2, 34859367916507136, test 32, 1, null, null
+2021-04-07 00:53:57.038 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2021-04-07 00:53:57.039 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2021-04-07 00:53:57.040 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 7
+2021-04-07 00:53:57.042 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":6,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":2,"id":34859367916507136,"name":"test","parent":0,"sort":1},{"ebookId":2,"id":34859416369106944,"name":"test 32","parent":34859367916507136,"sort":1},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}],"success":true}
+2021-04-07 00:53:57.043 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：186 ms -------------
+2021-04-07 01:47:18.864 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45m57s884ms).
+2021-04-07 01:49:45.858 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-07 01:49:45.862 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2021-04-07 01:49:46.809 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2021-04-07 01:49:47.223 INFO  com.github.frankzengjj.Wiki.WikiApplication       :55   [32m                  [0;39m Starting WikiApplication using Java 14.0.1 on Tianyus-MacBook-Air.local with PID 48577 (/Users/tianyuzeng/Desktop/github/Wiki/target/classes started by tianyuzeng in /Users/tianyuzeng/Desktop/github/Wiki)
+2021-04-07 01:49:47.224 INFO  com.github.frankzengjj.Wiki.WikiApplication       :662  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-04-07 01:49:47.885 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-04-07 01:49:47.886 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-04-07 01:49:47.887 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-04-07 01:49:47.887 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-07 01:49:47.911 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-04-07 01:49:47.911 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 680 ms
+2021-04-07 01:49:48.151 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'docController' defined in file [/Users/tianyuzeng/Desktop/github/Wiki/target/classes/com/github/frankzengjj/Wiki/controller/DocController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.github.frankzengjj.Wiki.controller.DocController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@7c62a739]
+2021-04-07 01:49:48.152 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2021-04-07 01:49:48.161 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-04-07 01:49:48.195 ERROR org.springframework.boot.SpringApplication        :858  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'docController' defined in file [/Users/tianyuzeng/Desktop/github/Wiki/target/classes/com/github/frankzengjj/Wiki/controller/DocController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.github.frankzengjj.Wiki.controller.DocController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@7c62a739]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:579)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:769)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1313)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at com.github.frankzengjj.Wiki.WikiApplication.main(WikiApplication.java:14)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.github.frankzengjj.Wiki.controller.DocController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@7c62a739]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:739)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:671)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:366)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:347)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:295)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1098)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576)
+	... 21 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lcom/github/frankzengjj/Wiki/service/DocService;
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3139)
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2262)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:734)
+	... 27 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.github.frankzengjj.Wiki.service.DocService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:602)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:427)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 31 common frames omitted
+2021-04-07 01:49:49.690 INFO  com.github.frankzengjj.Wiki.WikiApplication       :55   [32m                  [0;39m Starting WikiApplication using Java 14.0.1 on Tianyus-MacBook-Air.local with PID 48577 (/Users/tianyuzeng/Desktop/github/Wiki/target/classes started by tianyuzeng in /Users/tianyuzeng/Desktop/github/Wiki)
+2021-04-07 01:49:49.690 INFO  com.github.frankzengjj.Wiki.WikiApplication       :662  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-04-07 01:49:49.967 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-04-07 01:49:49.968 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-04-07 01:49:49.968 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-04-07 01:49:49.968 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-07 01:49:49.979 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-04-07 01:49:49.979 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 284 ms
+2021-04-07 01:49:50.114 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'docController' defined in file [/Users/tianyuzeng/Desktop/github/Wiki/target/classes/com/github/frankzengjj/Wiki/controller/DocController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.github.frankzengjj.Wiki.controller.DocController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1ac635c3]
+2021-04-07 01:49:50.115 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2021-04-07 01:49:50.119 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-04-07 01:49:50.120 ERROR org.springframework.boot.SpringApplication        :858  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'docController' defined in file [/Users/tianyuzeng/Desktop/github/Wiki/target/classes/com/github/frankzengjj/Wiki/controller/DocController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.github.frankzengjj.Wiki.controller.DocController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1ac635c3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:579)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:769)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1313)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at com.github.frankzengjj.Wiki.WikiApplication.main(WikiApplication.java:14)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.github.frankzengjj.Wiki.controller.DocController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1ac635c3]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:739)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:671)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:366)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:347)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:295)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1098)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576)
+	... 21 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lcom/github/frankzengjj/Wiki/service/DocService;
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3139)
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2262)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:734)
+	... 27 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.github.frankzengjj.Wiki.service.DocService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:602)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:427)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 31 common frames omitted
+2021-04-07 01:52:54.046 INFO  com.github.frankzengjj.Wiki.WikiApplication       :55   [32m                  [0;39m Starting WikiApplication using Java 14.0.1 on Tianyus-MacBook-Air.local with PID 48577 (/Users/tianyuzeng/Desktop/github/Wiki/target/classes started by tianyuzeng in /Users/tianyuzeng/Desktop/github/Wiki)
+2021-04-07 01:52:54.047 INFO  com.github.frankzengjj.Wiki.WikiApplication       :662  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-04-07 01:52:54.642 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-04-07 01:52:54.645 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-04-07 01:52:54.646 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-04-07 01:52:54.648 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-07 01:52:54.671 INFO  o.a.c.c.ContainerBase.[Tomcat-2].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-04-07 01:52:54.672 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 621 ms
+2021-04-07 01:52:55.471 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-07 01:52:56.104 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-04-07 01:52:56.116 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-04-07 01:52:56.123 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-04-07 01:52:56.130 INFO  com.github.frankzengjj.Wiki.WikiApplication       :61   [32m                  [0;39m Started WikiApplication in 2.146 seconds (JVM running for 2813.687)
+2021-04-07 01:52:56.134 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-04-07 01:56:31.288 INFO  o.a.c.c.ContainerBase.[Tomcat-2].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-07 01:56:31.296 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-04-07 01:56:31.314 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 18 ms
+2021-04-07 01:57:18.578 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 01:57:18.583 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/category/all GET
+2021-04-07 01:57:18.584 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.CategoryController.all
+2021-04-07 01:57:18.587 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 01:57:18.591 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: []
+2021-04-07 01:57:18.728 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-2 - Starting...
+2021-04-07 01:57:19.949 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-2 - Start completed.
+2021-04-07 01:57:19.950 DEBUG c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-04-07 01:57:19.951 DEBUG c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 
+2021-04-07 01:57:20.037 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-04-07 01:57:20.038 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-04-07 01:57:20.039 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-04-07 01:57:20.040 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-04-07 01:57:20.041 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-04-07 01:57:20.042 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-04-07 01:57:20.043 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2021-04-07 01:57:20.044 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-04-07 01:57:20.044 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-04-07 01:57:20.044 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-04-07 01:57:20.044 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-04-07 01:57:20.045 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-04-07 01:57:20.045 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2021-04-07 01:57:20.045 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-04-07 01:57:20.046 DEBUG c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 13
+2021-04-07 01:57:20.065 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501}],"success":true}
+2021-04-07 01:57:20.066 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：1490 ms -------------
+2021-04-07 01:57:29.216 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-07 01:57:29.217 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-2 - Shutdown initiated...
+2021-04-07 01:57:30.155 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-2 - Shutdown completed.
+2021-04-07 01:57:39.941 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.1.7.Final
+2021-04-07 01:57:39.969 INFO  com.github.frankzengjj.Wiki.WikiApplication       :55   [32m                  [0;39m Starting WikiApplication using Java 14.0.1 on Tianyus-MacBook-Air.local with PID 49405 (/Users/tianyuzeng/Desktop/github/Wiki/target/classes started by tianyuzeng in /Users/tianyuzeng/Desktop/github/Wiki)
+2021-04-07 01:57:40.020 INFO  com.github.frankzengjj.Wiki.WikiApplication       :662  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-04-07 01:57:40.141 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-07 01:57:40.141 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-07 01:57:42.464 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-04-07 01:57:42.482 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-04-07 01:57:42.483 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-04-07 01:57:42.484 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-07 01:57:42.589 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-04-07 01:57:42.589 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 2447 ms
+2021-04-07 01:57:43.805 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-07 01:57:44.386 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-04-07 01:57:44.405 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-04-07 01:57:44.436 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-04-07 01:57:44.452 INFO  com.github.frankzengjj.Wiki.WikiApplication       :61   [32m                  [0;39m Started WikiApplication in 5.844 seconds (JVM running for 6.891)
+2021-04-07 01:58:06.832 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-07 01:58:06.833 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-04-07 01:58:06.835 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 2 ms
+2021-04-07 01:58:06.900 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 01:58:06.901 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/category/all GET
+2021-04-07 01:58:06.902 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.CategoryController.all
+2021-04-07 01:58:06.903 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 01:58:06.990 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: []
+2021-04-07 01:58:07.098 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2021-04-07 01:58:09.018 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2021-04-07 01:58:09.041 DEBUG c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-04-07 01:58:09.094 DEBUG c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 
+2021-04-07 01:58:09.226 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-04-07 01:58:09.228 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-04-07 01:58:09.232 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-04-07 01:58:09.234 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-04-07 01:58:09.236 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-04-07 01:58:09.238 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-04-07 01:58:09.240 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2021-04-07 01:58:09.241 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-04-07 01:58:09.242 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-04-07 01:58:09.245 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-04-07 01:58:09.246 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-04-07 01:58:09.247 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-04-07 01:58:09.248 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2021-04-07 01:58:09.250 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-04-07 01:58:09.252 DEBUG c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 13
+2021-04-07 01:58:09.312 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501}],"success":true}
+2021-04-07 01:58:09.312 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：2413 ms -------------
+2021-04-07 01:58:09.478 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 01:58:09.479 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/category/all GET
+2021-04-07 01:58:09.479 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.CategoryController.all
+2021-04-07 01:58:09.479 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 01:58:09.480 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: []
+2021-04-07 01:58:09.492 DEBUG c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-04-07 01:58:09.493 DEBUG c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 
+2021-04-07 01:58:09.587 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-04-07 01:58:09.588 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-04-07 01:58:09.590 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-04-07 01:58:09.591 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-04-07 01:58:09.595 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-04-07 01:58:09.596 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-04-07 01:58:09.598 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2021-04-07 01:58:09.599 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-04-07 01:58:09.600 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-04-07 01:58:09.601 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-04-07 01:58:09.602 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-04-07 01:58:09.604 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-04-07 01:58:09.605 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2021-04-07 01:58:09.605 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-04-07 01:58:09.607 DEBUG c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 13
+2021-04-07 01:58:09.610 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501}],"success":true}
+2021-04-07 01:58:09.611 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：133 ms -------------
+2021-04-07 01:58:09.737 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 01:58:09.738 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/ebook/list GET
+2021-04-07 01:58:09.739 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.EbookController.list
+2021-04-07 01:58:09.739 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 01:58:09.744 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"page":1,"size":100}]
+2021-04-07 01:58:09.810 DEBUG c.g.f.W.mapper.EbookMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2021-04-07 01:58:09.810 DEBUG c.g.f.W.mapper.EbookMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==> Parameters: 
+2021-04-07 01:58:09.910 TRACE c.g.f.W.mapper.EbookMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==    Columns: count(0)
+2021-04-07 01:58:09.910 TRACE c.g.f.W.mapper.EbookMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==        Row: 3
+2021-04-07 01:58:09.911 DEBUG c.g.f.W.mapper.EbookMapper.selectByExample_COUNT  :137  [32m                  [0;39m <==      Total: 1
+2021-04-07 01:58:09.915 DEBUG c.g.f.Wiki.mapper.EbookMapper.selectByExample     :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2021-04-07 01:58:09.916 DEBUG c.g.f.Wiki.mapper.EbookMapper.selectByExample     :137  [32m                  [0;39m ==> Parameters: 100(Integer)
+2021-04-07 01:58:10.027 TRACE c.g.f.Wiki.mapper.EbookMapper.selectByExample     :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-04-07 01:58:10.028 TRACE c.g.f.Wiki.mapper.EbookMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, 200, 202, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2021-04-07 01:58:10.031 TRACE c.g.f.Wiki.mapper.EbookMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, 300, 301, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2021-04-07 01:58:10.034 TRACE c.g.f.Wiki.mapper.EbookMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 4, Mysql 入门教程, 400, 401, 零基础入门 Mysql 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2021-04-07 01:58:10.035 DEBUG c.g.f.Wiki.mapper.EbookMapper.selectByExample     :137  [32m                  [0;39m <==      Total: 3
+2021-04-07 01:58:10.062 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":{"list":[{"category1Id":200,"category2Id":202,"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","docCount":0,"id":2,"name":"Vue 入门教程","viewCount":0,"voteCount":0},{"category1Id":300,"category2Id":301,"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","docCount":0,"id":3,"name":"Python 入门教程","viewCount":0,"voteCount":0},{"category1Id":400,"category2Id":401,"description":"零基础入门 Mysql 开发，企业级应用开发最佳首选框架","docCount":0,"id":4,"name":"Mysql 入门教程","viewCount":0,"voteCount":0}],"total":3},"success":true}
+2021-04-07 01:58:10.063 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：326 ms -------------
+2021-04-07 01:58:13.027 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 01:58:13.028 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/category/all GET
+2021-04-07 01:58:13.029 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.CategoryController.all
+2021-04-07 01:58:13.030 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 01:58:13.030 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: []
+2021-04-07 01:58:13.208 DEBUG c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-04-07 01:58:13.210 DEBUG c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 
+2021-04-07 01:58:13.298 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-04-07 01:58:13.299 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-04-07 01:58:13.300 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-04-07 01:58:13.301 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-04-07 01:58:13.302 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-04-07 01:58:13.304 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-04-07 01:58:13.305 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2021-04-07 01:58:13.307 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-04-07 01:58:13.308 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-04-07 01:58:13.310 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-04-07 01:58:13.314 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-04-07 01:58:13.316 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-04-07 01:58:13.317 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2021-04-07 01:58:13.319 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-04-07 01:58:13.321 DEBUG c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 13
+2021-04-07 01:58:13.323 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501}],"success":true}
+2021-04-07 01:58:13.324 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：297 ms -------------
+2021-04-07 01:58:13.351 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 01:58:13.352 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/ebook/list GET
+2021-04-07 01:58:13.352 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.EbookController.list
+2021-04-07 01:58:13.353 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 01:58:13.355 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"page":1,"size":100}]
+2021-04-07 01:58:13.359 DEBUG c.g.f.W.mapper.EbookMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2021-04-07 01:58:13.360 DEBUG c.g.f.W.mapper.EbookMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==> Parameters: 
+2021-04-07 01:58:13.463 TRACE c.g.f.W.mapper.EbookMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==    Columns: count(0)
+2021-04-07 01:58:13.465 TRACE c.g.f.W.mapper.EbookMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==        Row: 3
+2021-04-07 01:58:13.467 DEBUG c.g.f.W.mapper.EbookMapper.selectByExample_COUNT  :137  [32m                  [0;39m <==      Total: 1
+2021-04-07 01:58:13.469 DEBUG c.g.f.Wiki.mapper.EbookMapper.selectByExample     :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2021-04-07 01:58:13.470 DEBUG c.g.f.Wiki.mapper.EbookMapper.selectByExample     :137  [32m                  [0;39m ==> Parameters: 100(Integer)
+2021-04-07 01:58:13.556 TRACE c.g.f.Wiki.mapper.EbookMapper.selectByExample     :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-04-07 01:58:13.557 TRACE c.g.f.Wiki.mapper.EbookMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, 200, 202, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2021-04-07 01:58:13.559 TRACE c.g.f.Wiki.mapper.EbookMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, 300, 301, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2021-04-07 01:58:13.561 TRACE c.g.f.Wiki.mapper.EbookMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 4, Mysql 入门教程, 400, 401, 零基础入门 Mysql 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2021-04-07 01:58:13.562 DEBUG c.g.f.Wiki.mapper.EbookMapper.selectByExample     :137  [32m                  [0;39m <==      Total: 3
+2021-04-07 01:58:13.565 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":{"list":[{"category1Id":200,"category2Id":202,"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","docCount":0,"id":2,"name":"Vue 入门教程","viewCount":0,"voteCount":0},{"category1Id":300,"category2Id":301,"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","docCount":0,"id":3,"name":"Python 入门教程","viewCount":0,"voteCount":0},{"category1Id":400,"category2Id":401,"description":"零基础入门 Mysql 开发，企业级应用开发最佳首选框架","docCount":0,"id":4,"name":"Mysql 入门教程","viewCount":0,"voteCount":0}],"total":3},"success":true}
+2021-04-07 01:58:13.566 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：215 ms -------------
+2021-04-07 01:58:18.899 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 01:58:18.900 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/doc/all GET
+2021-04-07 01:58:18.901 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.DocController.all
+2021-04-07 01:58:18.902 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 01:58:18.902 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: []
+2021-04-07 01:58:19.003 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2021-04-07 01:58:19.004 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 
+2021-04-07 01:58:19.092 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-04-07 01:58:19.092 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2021-04-07 01:58:19.093 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2021-04-07 01:58:19.094 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2021-04-07 01:58:19.095 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2021-04-07 01:58:19.096 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2021-04-07 01:58:19.097 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2021-04-07 01:58:19.098 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 6
+2021-04-07 01:58:19.111 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}],"success":true}
+2021-04-07 01:58:19.112 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：213 ms -------------
+2021-04-07 01:58:30.456 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 01:58:30.457 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/doc/delete/5,6 DELETE
+2021-04-07 01:58:30.458 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.DocController.delete
+2021-04-07 01:58:30.458 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 01:58:30.459 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: ["5,6"]
+2021-04-07 01:58:30.566 DEBUG c.g.f.Wiki.mapper.DocMapper.deleteByExample       :137  [32m                  [0;39m ==>  Preparing: delete from doc WHERE ( id in ( ? , ? ) )
+2021-04-07 01:58:30.567 DEBUG c.g.f.Wiki.mapper.DocMapper.deleteByExample       :137  [32m                  [0;39m ==> Parameters: 5(Long), 6(Long)
+2021-04-07 01:58:30.747 DEBUG c.g.f.Wiki.mapper.DocMapper.deleteByExample       :137  [32m                  [0;39m <==    Updates: 2
+2021-04-07 01:58:30.749 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"success":true}
+2021-04-07 01:58:30.750 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：294 ms -------------
+2021-04-07 01:58:30.779 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 01:58:30.780 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/doc/all GET
+2021-04-07 01:58:30.781 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.DocController.all
+2021-04-07 01:58:30.781 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 01:58:30.781 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: []
+2021-04-07 01:58:30.782 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2021-04-07 01:58:30.784 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 
+2021-04-07 01:58:30.872 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-04-07 01:58:30.873 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2021-04-07 01:58:30.875 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2021-04-07 01:58:30.877 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2021-04-07 01:58:30.878 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2021-04-07 01:58:30.879 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 4
+2021-04-07 01:58:30.881 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0}],"success":true}
+2021-04-07 01:58:30.881 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：102 ms -------------
+2021-04-07 01:58:36.401 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 01:58:36.402 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/doc/delete/5,6,3,4 DELETE
+2021-04-07 01:58:36.403 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.DocController.delete
+2021-04-07 01:58:36.404 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 01:58:36.404 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: ["5,6,3,4"]
+2021-04-07 01:58:36.525 DEBUG c.g.f.Wiki.mapper.DocMapper.deleteByExample       :137  [32m                  [0;39m ==>  Preparing: delete from doc WHERE ( id in ( ? , ? , ? , ? ) )
+2021-04-07 01:58:36.526 DEBUG c.g.f.Wiki.mapper.DocMapper.deleteByExample       :137  [32m                  [0;39m ==> Parameters: 5(Long), 6(Long), 3(Long), 4(Long)
+2021-04-07 01:58:36.699 DEBUG c.g.f.Wiki.mapper.DocMapper.deleteByExample       :137  [32m                  [0;39m <==    Updates: 2
+2021-04-07 01:58:36.700 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"success":true}
+2021-04-07 01:58:36.700 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：299 ms -------------
+2021-04-07 01:58:36.734 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 01:58:36.735 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/doc/all GET
+2021-04-07 01:58:36.736 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.DocController.all
+2021-04-07 01:58:36.736 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 01:58:36.737 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: []
+2021-04-07 01:58:36.739 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2021-04-07 01:58:36.740 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 
+2021-04-07 01:58:36.824 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-04-07 01:58:36.825 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2021-04-07 01:58:36.827 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2021-04-07 01:58:36.829 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 2
+2021-04-07 01:58:36.832 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0}],"success":true}
+2021-04-07 01:58:36.833 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：99 ms -------------
+2021-04-07 02:03:34.351 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 02:03:34.357 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/doc/all GET
+2021-04-07 02:03:34.358 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.DocController.all
+2021-04-07 02:03:34.359 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 02:03:34.359 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: []
+2021-04-07 02:03:34.455 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2021-04-07 02:03:34.457 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 
+2021-04-07 02:03:34.540 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-04-07 02:03:34.541 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2021-04-07 02:03:34.542 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2021-04-07 02:03:34.543 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 2
+2021-04-07 02:03:34.549 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0}],"success":true}
+2021-04-07 02:03:34.551 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：200 ms -------------
+2021-04-07 02:03:49.077 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 02:03:49.077 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/doc/delete/1,2 DELETE
+2021-04-07 02:03:49.078 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.DocController.delete
+2021-04-07 02:03:49.079 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 02:03:49.079 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: ["1,2"]
+2021-04-07 02:03:49.180 DEBUG c.g.f.Wiki.mapper.DocMapper.deleteByExample       :137  [32m                  [0;39m ==>  Preparing: delete from doc WHERE ( id in ( ? , ? ) )
+2021-04-07 02:03:49.182 DEBUG c.g.f.Wiki.mapper.DocMapper.deleteByExample       :137  [32m                  [0;39m ==> Parameters: 1(Long), 2(Long)
+2021-04-07 02:03:49.359 DEBUG c.g.f.Wiki.mapper.DocMapper.deleteByExample       :137  [32m                  [0;39m <==    Updates: 2
+2021-04-07 02:03:49.360 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"success":true}
+2021-04-07 02:03:49.361 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：284 ms -------------
+2021-04-07 02:03:49.380 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 02:03:49.380 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/doc/all GET
+2021-04-07 02:03:49.381 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.DocController.all
+2021-04-07 02:03:49.381 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 02:03:49.382 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: []
+2021-04-07 02:03:49.385 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2021-04-07 02:03:49.386 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 
+2021-04-07 02:03:49.473 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 0
+2021-04-07 02:03:49.476 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":[],"success":true}
+2021-04-07 02:03:49.476 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：96 ms -------------
+2021-04-07 02:04:03.827 WARN  c.g.f.Wiki.controller.ControllerExceptionHandler  :28   [32m                  [0;39m 参数校验失败：parent cannot be empty
+2021-04-07 02:04:03.831 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.github.frankzengjj.Wiki.response.CommonResponse com.github.frankzengjj.Wiki.controller.DocController.save(com.github.frankzengjj.Wiki.request.DocSaveRequest): [Field error in object 'docSaveRequest' on field 'parent': rejected value [null]; codes [NotNull.docSaveRequest.parent,NotNull.parent,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveRequest.parent,parent]; arguments []; default message [parent]]; default message [parent cannot be empty]] ]
+2021-04-07 02:04:26.203 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 02:04:26.204 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/category/all GET
+2021-04-07 02:04:26.206 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.CategoryController.all
+2021-04-07 02:04:26.206 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 02:04:26.207 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: []
+2021-04-07 02:04:26.311 DEBUG c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-04-07 02:04:26.312 DEBUG c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 
+2021-04-07 02:04:26.395 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-04-07 02:04:26.396 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-04-07 02:04:26.397 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-04-07 02:04:26.398 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-04-07 02:04:26.399 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-04-07 02:04:26.400 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-04-07 02:04:26.401 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2021-04-07 02:04:26.401 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-04-07 02:04:26.402 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-04-07 02:04:26.402 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-04-07 02:04:26.403 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-04-07 02:04:26.404 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-04-07 02:04:26.405 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2021-04-07 02:04:26.406 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-04-07 02:04:26.406 DEBUG c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 13
+2021-04-07 02:04:26.409 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501}],"success":true}
+2021-04-07 02:04:26.410 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：207 ms -------------
+2021-04-07 02:04:28.754 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 02:04:28.756 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/ebook/list GET
+2021-04-07 02:04:28.757 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.EbookController.list
+2021-04-07 02:04:28.757 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 02:04:28.758 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"categoryId2":101,"page":1,"size":1000}]
+2021-04-07 02:04:28.871 DEBUG c.g.f.W.mapper.EbookMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2021-04-07 02:04:28.873 DEBUG c.g.f.W.mapper.EbookMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==> Parameters: 101(Long)
+2021-04-07 02:04:28.962 TRACE c.g.f.W.mapper.EbookMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==    Columns: count(0)
+2021-04-07 02:04:28.962 TRACE c.g.f.W.mapper.EbookMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==        Row: 0
+2021-04-07 02:04:28.963 DEBUG c.g.f.W.mapper.EbookMapper.selectByExample_COUNT  :137  [32m                  [0;39m <==      Total: 1
+2021-04-07 02:04:28.965 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":{"list":[],"total":0},"success":true}
+2021-04-07 02:04:28.966 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：212 ms -------------
+2021-04-07 02:04:31.265 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 02:04:31.265 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/category/all GET
+2021-04-07 02:04:31.266 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.CategoryController.all
+2021-04-07 02:04:31.266 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 02:04:31.266 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: []
+2021-04-07 02:04:31.362 DEBUG c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-04-07 02:04:31.363 DEBUG c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 
+2021-04-07 02:04:31.448 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-04-07 02:04:31.449 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-04-07 02:04:31.451 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-04-07 02:04:31.452 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-04-07 02:04:31.453 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-04-07 02:04:31.454 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-04-07 02:04:31.455 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2021-04-07 02:04:31.457 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-04-07 02:04:31.458 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-04-07 02:04:31.460 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-04-07 02:04:31.461 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-04-07 02:04:31.462 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-04-07 02:04:31.463 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2021-04-07 02:04:31.464 TRACE c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-04-07 02:04:31.465 DEBUG c.g.f.Wiki.mapper.CategoryMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 13
+2021-04-07 02:04:31.469 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501}],"success":true}
+2021-04-07 02:04:31.470 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：206 ms -------------
+2021-04-07 02:04:31.497 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 02:04:31.497 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/ebook/list GET
+2021-04-07 02:04:31.498 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.EbookController.list
+2021-04-07 02:04:31.498 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 02:04:31.499 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"page":1,"size":100}]
+2021-04-07 02:04:31.505 DEBUG c.g.f.W.mapper.EbookMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2021-04-07 02:04:31.506 DEBUG c.g.f.W.mapper.EbookMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==> Parameters: 
+2021-04-07 02:04:31.609 TRACE c.g.f.W.mapper.EbookMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==    Columns: count(0)
+2021-04-07 02:04:31.610 TRACE c.g.f.W.mapper.EbookMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==        Row: 3
+2021-04-07 02:04:31.611 DEBUG c.g.f.W.mapper.EbookMapper.selectByExample_COUNT  :137  [32m                  [0;39m <==      Total: 1
+2021-04-07 02:04:31.612 DEBUG c.g.f.Wiki.mapper.EbookMapper.selectByExample     :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2021-04-07 02:04:31.613 DEBUG c.g.f.Wiki.mapper.EbookMapper.selectByExample     :137  [32m                  [0;39m ==> Parameters: 100(Integer)
+2021-04-07 02:04:31.701 TRACE c.g.f.Wiki.mapper.EbookMapper.selectByExample     :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-04-07 02:04:31.702 TRACE c.g.f.Wiki.mapper.EbookMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, 200, 202, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2021-04-07 02:04:31.703 TRACE c.g.f.Wiki.mapper.EbookMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, 300, 301, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2021-04-07 02:04:31.703 TRACE c.g.f.Wiki.mapper.EbookMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 4, Mysql 入门教程, 400, 401, 零基础入门 Mysql 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2021-04-07 02:04:31.704 DEBUG c.g.f.Wiki.mapper.EbookMapper.selectByExample     :137  [32m                  [0;39m <==      Total: 3
+2021-04-07 02:04:31.706 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":{"list":[{"category1Id":200,"category2Id":202,"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","docCount":0,"id":2,"name":"Vue 入门教程","viewCount":0,"voteCount":0},{"category1Id":300,"category2Id":301,"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","docCount":0,"id":3,"name":"Python 入门教程","viewCount":0,"voteCount":0},{"category1Id":400,"category2Id":401,"description":"零基础入门 Mysql 开发，企业级应用开发最佳首选框架","docCount":0,"id":4,"name":"Mysql 入门教程","viewCount":0,"voteCount":0}],"total":3},"success":true}
+2021-04-07 02:04:31.707 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：210 ms -------------
+2021-04-07 02:04:33.961 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 02:04:33.963 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/doc/all GET
+2021-04-07 02:04:33.964 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.DocController.all
+2021-04-07 02:04:33.964 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 02:04:33.965 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: []
+2021-04-07 02:04:34.059 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2021-04-07 02:04:34.060 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 
+2021-04-07 02:04:34.150 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 0
+2021-04-07 02:04:34.153 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":[],"success":true}
+2021-04-07 02:04:34.154 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：193 ms -------------
+2021-04-07 02:05:47.346 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 02:05:47.348 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/doc/all GET
+2021-04-07 02:05:47.348 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.DocController.all
+2021-04-07 02:05:47.349 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 02:05:47.349 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: []
+2021-04-07 02:05:47.436 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2021-04-07 02:05:47.437 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 
+2021-04-07 02:05:47.529 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 0
+2021-04-07 02:05:47.530 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":[],"success":true}
+2021-04-07 02:05:47.530 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：184 ms -------------
+2021-04-07 02:05:48.806 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 02:05:48.807 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/doc/all GET
+2021-04-07 02:05:48.807 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.DocController.all
+2021-04-07 02:05:48.810 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 02:05:48.811 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: []
+2021-04-07 02:05:48.903 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2021-04-07 02:05:48.904 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 
+2021-04-07 02:05:48.991 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 0
+2021-04-07 02:05:48.993 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":[],"success":true}
+2021-04-07 02:05:48.994 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：188 ms -------------
+2021-04-07 02:07:19.221 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 02:07:19.224 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/doc/all GET
+2021-04-07 02:07:19.225 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.DocController.all
+2021-04-07 02:07:19.225 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 02:07:19.226 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: []
+2021-04-07 02:07:19.321 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2021-04-07 02:07:19.322 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 
+2021-04-07 02:07:19.412 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 0
+2021-04-07 02:07:19.415 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":[],"success":true}
+2021-04-07 02:07:19.415 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：195 ms -------------
+2021-04-07 02:07:26.583 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 02:07:26.583 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/doc/all GET
+2021-04-07 02:07:26.584 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.DocController.all
+2021-04-07 02:07:26.584 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 02:07:26.585 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: []
+2021-04-07 02:07:26.679 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2021-04-07 02:07:26.680 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 
+2021-04-07 02:07:26.767 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 0
+2021-04-07 02:07:26.768 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":[],"success":true}
+2021-04-07 02:07:26.769 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：186 ms -------------
+2021-04-07 02:07:40.356 WARN  c.g.f.Wiki.controller.ControllerExceptionHandler  :28   [32m                  [0;39m 参数校验失败：parent cannot be empty
+2021-04-07 02:07:40.360 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.github.frankzengjj.Wiki.response.CommonResponse com.github.frankzengjj.Wiki.controller.DocController.save(com.github.frankzengjj.Wiki.request.DocSaveRequest): [Field error in object 'docSaveRequest' on field 'parent': rejected value [null]; codes [NotNull.docSaveRequest.parent,NotNull.parent,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveRequest.parent,parent]; arguments []; default message [parent]]; default message [parent cannot be empty]] ]
+2021-04-07 02:07:58.472 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 02:07:58.472 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/doc/all GET
+2021-04-07 02:07:58.473 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.DocController.all
+2021-04-07 02:07:58.473 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 02:07:58.473 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: []
+2021-04-07 02:07:58.569 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2021-04-07 02:07:58.570 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 
+2021-04-07 02:07:58.662 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 0
+2021-04-07 02:07:58.663 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":[],"success":true}
+2021-04-07 02:07:58.663 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：191 ms -------------
+2021-04-07 02:08:49.859 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 02:08:49.860 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/doc/all GET
+2021-04-07 02:08:49.860 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.DocController.all
+2021-04-07 02:08:49.861 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 02:08:49.861 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: []
+2021-04-07 02:08:49.949 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2021-04-07 02:08:49.951 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 
+2021-04-07 02:08:50.038 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 0
+2021-04-07 02:08:50.039 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":[],"success":true}
+2021-04-07 02:08:50.040 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：181 ms -------------
+2021-04-07 02:09:18.946 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 02:09:18.947 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/doc/all GET
+2021-04-07 02:09:18.948 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.DocController.all
+2021-04-07 02:09:18.948 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 02:09:18.949 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: []
+2021-04-07 02:09:19.046 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2021-04-07 02:09:19.048 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 
+2021-04-07 02:09:19.141 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 0
+2021-04-07 02:09:19.142 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":[],"success":true}
+2021-04-07 02:09:19.143 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：197 ms -------------
+2021-04-07 02:10:14.963 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 02:10:14.963 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/doc/all GET
+2021-04-07 02:10:14.963 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.DocController.all
+2021-04-07 02:10:14.964 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 02:10:14.964 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: []
+2021-04-07 02:10:15.055 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2021-04-07 02:10:15.056 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 
+2021-04-07 02:10:15.146 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 0
+2021-04-07 02:10:15.147 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":[],"success":true}
+2021-04-07 02:10:15.150 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：187 ms -------------
+2021-04-07 02:11:54.090 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 02:11:54.092 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/doc/all GET
+2021-04-07 02:11:54.093 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.DocController.all
+2021-04-07 02:11:54.094 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 02:11:54.094 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: []
+2021-04-07 02:11:54.187 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2021-04-07 02:11:54.188 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 
+2021-04-07 02:11:54.276 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 0
+2021-04-07 02:11:54.278 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":[],"success":true}
+2021-04-07 02:11:54.279 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：189 ms -------------
+2021-04-07 02:12:00.356 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 02:12:00.357 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/doc/all GET
+2021-04-07 02:12:00.358 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.DocController.all
+2021-04-07 02:12:00.358 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 02:12:00.359 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: []
+2021-04-07 02:12:00.452 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2021-04-07 02:12:00.453 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 
+2021-04-07 02:12:00.542 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 0
+2021-04-07 02:12:00.545 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":[],"success":true}
+2021-04-07 02:12:00.545 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：189 ms -------------
+2021-04-07 02:13:28.165 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 02:13:28.166 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/doc/all GET
+2021-04-07 02:13:28.167 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.DocController.all
+2021-04-07 02:13:28.167 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 02:13:28.168 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: []
+2021-04-07 02:13:28.261 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2021-04-07 02:13:28.263 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 
+2021-04-07 02:13:28.353 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 0
+2021-04-07 02:13:28.354 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":[],"success":true}
+2021-04-07 02:13:28.354 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：190 ms -------------
+2021-04-07 02:14:13.735 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 02:14:13.741 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/doc/all GET
+2021-04-07 02:14:13.743 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.DocController.all
+2021-04-07 02:14:13.743 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 02:14:13.744 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: []
+2021-04-07 02:14:13.840 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2021-04-07 02:14:13.843 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 
+2021-04-07 02:14:13.933 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 0
+2021-04-07 02:14:13.935 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":[],"success":true}
+2021-04-07 02:14:13.936 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：201 ms -------------
+2021-04-07 02:14:25.836 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 02:14:25.837 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/doc/save POST
+2021-04-07 02:14:25.837 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.DocController.save
+2021-04-07 02:14:25.838 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 02:14:25.858 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"ebookId":2,"name":"test1","parent":0,"sort":1}]
+2021-04-07 02:14:25.956 DEBUG c.github.frankzengjj.Wiki.mapper.DocMapper.insert :137  [32m                  [0;39m ==>  Preparing: insert into doc (id, ebook_id, parent, `name`, sort, view_count, vote_count) values (?, ?, ?, ?, ?, ?, ?)
+2021-04-07 02:14:25.961 DEBUG c.github.frankzengjj.Wiki.mapper.DocMapper.insert :137  [32m                  [0;39m ==> Parameters: 34928762231590912(Long), 2(Long), 0(Long), test1(String), 1(Integer), null, null
+2021-04-07 02:14:26.142 DEBUG c.github.frankzengjj.Wiki.mapper.DocMapper.insert :137  [32m                  [0;39m <==    Updates: 1
+2021-04-07 02:14:26.143 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"success":true}
+2021-04-07 02:14:26.143 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：307 ms -------------
+2021-04-07 02:14:26.203 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 02:14:26.204 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/doc/all GET
+2021-04-07 02:14:26.204 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.DocController.all
+2021-04-07 02:14:26.205 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 02:14:26.206 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: []
+2021-04-07 02:14:26.208 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2021-04-07 02:14:26.208 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 
+2021-04-07 02:14:26.293 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-04-07 02:14:26.294 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 34928762231590912, 2, 0, test1, 1, null, null
+2021-04-07 02:14:26.296 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2021-04-07 02:14:26.297 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":[{"ebookId":2,"id":34928762231590912,"name":"test1","parent":0,"sort":1}],"success":true}
+2021-04-07 02:14:26.298 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：95 ms -------------
+2021-04-07 02:14:40.707 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 02:14:40.709 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/doc/save POST
+2021-04-07 02:14:40.713 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.DocController.save
+2021-04-07 02:14:40.714 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 02:14:40.715 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"ebookId":2,"name":"test 2","parent":34928762231590910,"sort":2}]
+2021-04-07 02:14:40.811 DEBUG c.github.frankzengjj.Wiki.mapper.DocMapper.insert :137  [32m                  [0;39m ==>  Preparing: insert into doc (id, ebook_id, parent, `name`, sort, view_count, vote_count) values (?, ?, ?, ?, ?, ?, ?)
+2021-04-07 02:14:40.812 DEBUG c.github.frankzengjj.Wiki.mapper.DocMapper.insert :137  [32m                  [0;39m ==> Parameters: 34928824537976832(Long), 2(Long), 34928762231590910(Long), test 2(String), 2(Integer), null, null
+2021-04-07 02:14:40.996 DEBUG c.github.frankzengjj.Wiki.mapper.DocMapper.insert :137  [32m                  [0;39m <==    Updates: 1
+2021-04-07 02:14:40.997 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"success":true}
+2021-04-07 02:14:40.997 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：290 ms -------------
+2021-04-07 02:14:41.058 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 02:14:41.058 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/doc/all GET
+2021-04-07 02:14:41.059 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.DocController.all
+2021-04-07 02:14:41.059 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 02:14:41.059 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: []
+2021-04-07 02:14:41.060 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2021-04-07 02:14:41.061 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 
+2021-04-07 02:14:41.148 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-04-07 02:14:41.148 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 34928762231590912, 2, 0, test1, 1, null, null
+2021-04-07 02:14:41.154 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 34928824537976832, 2, 34928762231590910, test 2, 2, null, null
+2021-04-07 02:14:41.155 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 2
+2021-04-07 02:14:41.162 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":[{"ebookId":2,"id":34928762231590912,"name":"test1","parent":0,"sort":1},{"ebookId":2,"id":34928824537976832,"name":"test 2","parent":34928762231590910,"sort":2}],"success":true}
+2021-04-07 02:14:41.163 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：105 ms -------------
+2021-04-07 02:15:01.099 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 02:15:01.100 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/doc/save POST
+2021-04-07 02:15:01.101 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.DocController.save
+2021-04-07 02:15:01.103 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 02:15:01.104 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: [{"ebookId":2,"id":34928824537976830,"name":"test 2","parent":34928762231590910,"sort":2}]
+2021-04-07 02:15:01.194 DEBUG c.g.f.Wiki.mapper.DocMapper.updateByPrimaryKey    :137  [32m                  [0;39m ==>  Preparing: update doc set ebook_id = ?, parent = ?, `name` = ?, sort = ?, view_count = ?, vote_count = ? where id = ?
+2021-04-07 02:15:01.196 DEBUG c.g.f.Wiki.mapper.DocMapper.updateByPrimaryKey    :137  [32m                  [0;39m ==> Parameters: 2(Long), 34928762231590910(Long), test 2(String), 2(Integer), null, null, 34928824537976830(Long)
+2021-04-07 02:15:01.657 DEBUG c.g.f.Wiki.mapper.DocMapper.updateByPrimaryKey    :137  [32m                  [0;39m <==    Updates: 0
+2021-04-07 02:15:01.659 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"success":true}
+2021-04-07 02:15:01.660 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：561 ms -------------
+2021-04-07 02:15:01.723 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 02:15:01.724 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/doc/all GET
+2021-04-07 02:15:01.724 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.DocController.all
+2021-04-07 02:15:01.724 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 02:15:01.725 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: []
+2021-04-07 02:15:01.810 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2021-04-07 02:15:01.811 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 
+2021-04-07 02:15:01.901 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-04-07 02:15:01.902 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 34928762231590912, 2, 0, test1, 1, null, null
+2021-04-07 02:15:01.904 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 34928824537976832, 2, 34928762231590910, test 2, 2, null, null
+2021-04-07 02:15:01.904 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 2
+2021-04-07 02:15:01.906 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":[{"ebookId":2,"id":34928762231590912,"name":"test1","parent":0,"sort":1},{"ebookId":2,"id":34928824537976832,"name":"test 2","parent":34928762231590910,"sort":2}],"success":true}
+2021-04-07 02:15:01.906 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：183 ms -------------
+2021-04-07 04:15:32.212 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h22s195ms).
+2021-04-07 08:15:57.639 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4h26s212ms).
+2021-04-07 12:16:22.964 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4h25s324ms).
+2021-04-07 22:18:41.213 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10h2m18s250ms).
+2021-04-07 22:19:09.490 WARN  com.zaxxer.hikari.pool.HikariPool                 :779  [32m                  [0;39m HikariPool-1 - Retrograde clock change detected (housekeeper delta=28s276ms), soft-evicting connections from pool.
+2021-04-07 23:21:02.760 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=59m53s217ms).
+2021-04-07 23:38:37.156 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 23:38:37.166 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/doc/all GET
+2021-04-07 23:38:37.167 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.DocController.all
+2021-04-07 23:38:37.167 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 23:38:37.169 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: []
+2021-04-07 23:38:37.410 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@44e8c39c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-04-07 23:38:37.517 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7389e8c1 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-04-07 23:38:37.628 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4bc52224 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-04-07 23:38:37.894 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@49b3ece3 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-04-07 23:38:37.998 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@76d0f1b8 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-04-07 23:38:38.100 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4aa3d043 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-04-07 23:38:38.193 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@28951f31 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-04-07 23:38:38.323 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7e973a34 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-04-07 23:38:38.428 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@f3b496f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-04-07 23:38:38.531 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5bcea103 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-04-07 23:38:38.825 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2021-04-07 23:38:38.828 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 
+2021-04-07 23:38:38.944 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-04-07 23:38:38.945 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 34928762231590912, 2, 0, test1, 1, null, null
+2021-04-07 23:38:38.947 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 34928824537976832, 2, 34928762231590910, test 2, 2, null, null
+2021-04-07 23:38:38.948 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 2
+2021-04-07 23:38:38.953 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":[{"ebookId":2,"id":34928762231590912,"name":"test1","parent":0,"sort":1},{"ebookId":2,"id":34928824537976832,"name":"test 2","parent":34928762231590910,"sort":2}],"success":true}
+2021-04-07 23:38:38.954 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：1798 ms -------------
+2021-04-07 23:44:29.729 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-07 23:44:29.743 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2021-04-07 23:44:30.932 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2021-04-07 23:49:35.097 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.1.7.Final
+2021-04-07 23:49:35.137 INFO  com.github.frankzengjj.Wiki.WikiApplication       :55   [32m                  [0;39m Starting WikiApplication using Java 14.0.1 on Tianyus-MacBook-Air.local with PID 50953 (/Users/tianyuzeng/Desktop/github/Wiki/target/classes started by tianyuzeng in /Users/tianyuzeng/Desktop/github/Wiki)
+2021-04-07 23:49:35.139 INFO  com.github.frankzengjj.Wiki.WikiApplication       :662  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-04-07 23:49:35.234 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-07 23:49:35.234 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-07 23:49:37.286 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-04-07 23:49:37.300 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-04-07 23:49:37.301 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-04-07 23:49:37.301 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-07 23:49:37.373 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-04-07 23:49:37.373 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 2138 ms
+2021-04-07 23:49:38.287 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-07 23:49:38.754 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-04-07 23:49:38.769 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-04-07 23:49:38.793 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-04-07 23:49:38.806 INFO  com.github.frankzengjj.Wiki.WikiApplication       :61   [32m                  [0;39m Started WikiApplication in 4.719 seconds (JVM running for 5.895)
+2021-04-07 23:49:47.549 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-07 23:49:47.551 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-04-07 23:49:47.559 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 7 ms
+2021-04-07 23:49:47.677 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 23:49:47.680 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/doc/all GET
+2021-04-07 23:49:47.681 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.DocController.all
+2021-04-07 23:49:47.681 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 23:49:47.760 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: []
+2021-04-07 23:49:47.898 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2021-04-07 23:49:49.785 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2021-04-07 23:49:49.809 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2021-04-07 23:49:49.869 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 
+2021-04-07 23:49:49.999 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-04-07 23:49:50.000 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 34928762231590912, 2, 0, test1, 1, null, null
+2021-04-07 23:49:50.002 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 34928824537976832, 2, 34928762231590910, test 2, 2, null, null
+2021-04-07 23:49:50.003 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 2
+2021-04-07 23:49:50.063 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":[{"ebookId":2,"id":34928762231590912,"name":"test1","parent":0,"sort":1},{"ebookId":2,"id":34928824537976832,"name":"test 2","parent":34928762231590910,"sort":2}],"success":true}
+2021-04-07 23:49:50.064 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：2390 ms -------------
+2021-04-07 23:51:30.907 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 23:51:30.909 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/doc/all GET
+2021-04-07 23:51:30.910 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.DocController.all
+2021-04-07 23:51:30.914 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 23:51:30.916 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: []
+2021-04-07 23:51:31.032 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2021-04-07 23:51:31.035 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 
+2021-04-07 23:51:31.126 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-04-07 23:51:31.128 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 34928762231590912, 2, 0, test1, 1, null, null
+2021-04-07 23:51:31.129 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 34928824537976832, 2, 34928762231590910, test 2, 2, null, null
+2021-04-07 23:51:31.131 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 2
+2021-04-07 23:51:31.134 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":[{"ebookId":2,"id":34928762231590912,"name":"test1","parent":0,"sort":1},{"ebookId":2,"id":34928824537976832,"name":"test 2","parent":34928762231590910,"sort":2}],"success":true}
+2021-04-07 23:51:31.135 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：228 ms -------------
+2021-04-07 23:54:53.282 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :43   [32m                  [0;39m ------------- 开始 -------------
+2021-04-07 23:54:53.293 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :44   [32m                  [0;39m 请求地址: http://localhost:8880/doc/all GET
+2021-04-07 23:54:53.296 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :45   [32m                  [0;39m 类名方法: com.github.frankzengjj.Wiki.controller.DocController.all
+2021-04-07 23:54:53.296 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :46   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-04-07 23:54:53.298 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :66   [32m                  [0;39m 请求参数: []
+2021-04-07 23:54:53.406 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2021-04-07 23:54:53.410 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 
+2021-04-07 23:54:53.504 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-04-07 23:54:53.506 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 34928762231590912, 2, 0, test1, 1, null, null
+2021-04-07 23:54:53.510 TRACE c.g.f.Wiki.mapper.DocMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 34928824537976832, 2, 34928762231590910, test 2, 2, null, null
+2021-04-07 23:54:53.516 DEBUG c.g.f.Wiki.mapper.DocMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 2
+2021-04-07 23:54:53.522 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :78   [32m                  [0;39m 返回结果: {"content":[{"ebookId":2,"id":34928762231590912,"name":"test1","parent":0,"sort":1},{"ebookId":2,"id":34928824537976832,"name":"test 2","parent":34928762231590910,"sort":2}],"success":true}
+2021-04-07 23:54:53.524 INFO  com.github.frankzengjj.Wiki.aspect.LogAspect      :79   [32m                  [0;39m ------------- 结束 耗时：242 ms -------------

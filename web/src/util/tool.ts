@@ -26,4 +26,26 @@ export class Tool {
         return JSON.parse(JSON.stringify(obj));
       }
     }
+
+    public static array2Tree (array: any, parentId: number): any {
+        if (Tool.isEmpty(array)) {
+          return [];
+        }
+
+        const result = [];
+        for (let i = 0; i < array.length; i++) {
+          const c = array[i];
+          // console.log(Number(c.parent), Number(parentId));
+          if (Number(c.parent) === Number(parentId)) {
+            result.push(c);
+
+            // 递归查看当前节点对应的子节点
+            const children = Tool.array2Tree(array, c.id);
+            if (Tool.isNotEmpty(children)) {
+              c.children = children;
+            }
+          }
+        }
+        return result;
+      }
   }

@@ -9,7 +9,7 @@ public class PageRequest {
     private int page;
 
     @NotNull(message = "size cannot be empty or null")
-    @Max(value = 100, message = "maximum size is 100")
+    @Max(value = 1000, message = "maximum size is 1000")
     private int size;
 
     public int getPage() {
